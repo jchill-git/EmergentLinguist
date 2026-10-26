@@ -1,0 +1,14 @@
+I have attached a file called "lemma_list.txt", containing a list of base forms of words.
+Please generate 200 diverse sentences from this list of words. Each sentence should be seperated by a newline. Be creative.
+
+Below are some rules to follow while generating the sentences:
+ - Do not include any proper nouns.
+ - At least 10 of the sentences must contain a genitive and noun.
+ - At least 10 of the sentences must contain a relative clause and noun.
+ - At least 10 of the sentences must contain a demonstrative term (this, that, these, those) and noun.
+ - At least 10 of the sentences must contain a numeral and noun.
+ - At least 10 of the sentences must contain an adverbial subordinator and clause.
+ - At least 10 of the sentences must contain a negation and verb.
+ - At least 10 of the sentences must be yes/no questions.
+ - At least 10 of the sentences must be questions without a yes/no answer.
+ - At leats 10 of the sentences must include intensifiers.

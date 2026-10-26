@@ -1,0 +1,1159 @@
+# sent_id = 1
+# text = The old man was a sailor.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the
+2	old	old	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=old
+3	man	man	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=man
+4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	EnLemma=be
+5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+6	sailor	sailor	NOUN	NN	Number=Sing	0	root	_	EnLemma=sailor
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 2
+# text = The sun is high in the sky.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sun	sun	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=sun
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	high	high	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=high
+5	in	in	ADP	IN	_	7	case	_	EnLemma=in
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sky	sky	NOUN	NN	Number=Sing	4	obl	_	EnLemma=sky
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 3
+# text = Mary has a lamp.
+# annotation_version = 2
+1	Mary	Mary	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Mary
+2	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+3	a	a	DET	DT	Definite=Ind|PronType=Art	4	det	_	EnLemma=a
+4	lamp	lamp	NOUN	NN	Number=Sing	2	obj	_	EnLemma=lamp
+5	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 4
+# text = Jon is a young shepherd.
+# annotation_version = 2
+1	Jon	John	PROPN	NNP	Number=Sing	5	nsubj	_	EnLemma=John
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+3	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+4	young	young	ADJ	JJ	Degree=Pos	5	amod	_	EnLemma=young
+5	shepherd	shepherd	NOUN	NN	Number=Sing	0	root	_	EnLemma=shepherd
+6	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 5
+# text = The wolf is near the sheep.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wolf	wolf	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=wolf
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	near	near	ADP	IN	_	6	case	_	EnLemma=near
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	sheep	sheep	NOUN	NN	Number=Sing	0	root	_	EnLemma=sheep
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 6
+# text = The moon is low over the sea.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	moon	moon	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=moon
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	low	low	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=low
+5	over	over	ADP	IN	_	7	case	_	EnLemma=over
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sea	sea	NOUN	NN	Number=Sing	4	obl	_	EnLemma=sea
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 7
+# text = Paul would play the saxophone.
+# annotation_version = 2
+1	Paul	Paul	PROPN	NNP	Number=Sing	3	nsubj	_	EnLemma=Paul
+2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	EnLemma=would
+3	play	play	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=play
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	saxophone	saxophone	NOUN	NN	Number=Sing	3	obj	_	EnLemma=saxophone
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 8
+# text = The trumpeter is in the town.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	trumpeter	trumpeter	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=trumpeter
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	town	town	NOUN	NN	Number=Sing	0	root	_	EnLemma=town
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 9
+# text = The lady has a black case.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	lady	lady	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=lady
+3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+4	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+5	black	black	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=black
+6	case	case	NOUN	NN	Number=Sing	3	obj	_	EnLemma=case
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 10
+# text = The child could see the stars.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	child	child	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=child
+3	could	could	AUX	MD	VerbForm=Fin	4	aux	_	EnLemma=could
+4	see	see	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=see
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	stars	star	NOUN	NNS	Number=Plur	4	obj	_	EnLemma=star
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 11
+# text = A man is at the window.
+# annotation_version = 2
+1	A	a	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a
+2	man	man	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=man
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	at	at	ADP	IN	_	6	case	_	EnLemma=at
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	window	window	NOUN	NN	Number=Sing	0	root	_	EnLemma=window
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 12
+# text = The clock is in the square.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	clock	clock	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=clock
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	square	square	NOUN	NN	Number=Sing	0	root	_	EnLemma=square
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 13
+# text = Samuel would write a letter.
+# annotation_version = 2
+1	Samuel	Samuel	PROPN	NNP	Number=Sing	3	nsubj	_	EnLemma=Samuel
+2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	EnLemma=would
+3	write	write	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=write
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+5	letter	letter	NOUN	NN	Number=Sing	3	obj	_	EnLemma=letter
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 14
+# text = Her son is very strong.
+# annotation_version = 2
+1	Her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her
+2	son	son	NOUN	NN	Number=Sing	5	nsubj	_	EnLemma=son
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+4	very	very	ADV	RB	_	5	advmod	_	EnLemma=very
+5	strong	strong	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=strong
+6	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 15
+# text = The ferry is in the harbour.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	ferry	ferry	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=ferry
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	harbour	harbour	NOUN	NN	Number=Sing	0	root	_	EnLemma=harbour
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 16
+# text = It is the last hour of the year.
+# annotation_version = 2
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	EnLemma=it
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+3	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+4	last	last	ADJ	JJ	Degree=Pos	5	amod	_	EnLemma=last
+5	hour	hour	NOUN	NN	Number=Sing	0	root	_	EnLemma=hour
+6	of	of	ADP	IN	_	8	case	_	EnLemma=of
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	year	year	NOUN	NN	Number=Sing	5	nmod	_	EnLemma=year
+9	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 17
+# text = They gather in the church.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	gather	gather	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=gather
+3	in	in	ADP	IN	_	5	case	_	EnLemma=in
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	church	church	NOUN	NN	Number=Sing	2	obl	_	EnLemma=church
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 18
+# text = The people dance and the orchestra plays.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	people	person	NOUN	NNS	Number=Plur	3	nsubj	_	EnLemma=person
+3	dance	dance	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=dance
+4	and	and	CCONJ	CC	_	7	cc	_	EnLemma=and
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	orchestra	orchestra	NOUN	NN	Number=Sing	7	nsubj	_	EnLemma=orchestra
+7	plays	play	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	EnLemma=play
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 19
+# text = He keeps the sheep near the field.
+# annotation_version = 2
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=he
+2	keeps	keep	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=keep
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	sheep	sheep	NOUN	NN	Number=Sing	2	obj	_	EnLemma=sheep
+5	near	near	ADP	IN	_	7	case	_	EnLemma=near
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	field	field	NOUN	NN	Number=Sing	2	obl	_	EnLemma=field
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 20
+# text = She holds her hand high.
+# annotation_version = 2
+1	She	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=she
+2	holds	hold	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hold
+3	her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	EnLemma=her
+4	hand	hand	NOUN	NN	Number=Sing	2	obj	_	EnLemma=hand
+5	high	high	ADJ	JJ	Degree=Pos	2	xcomp	_	EnLemma=high
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 21
+# text = Who is that man on the road?
+# annotation_version = 2
+1	Who	who	PRON	WP	Case=Nom|PronType=Int	0	root	_	EnLemma=who
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be
+3	that	that	DET	DT	Number=Sing|PronType=Dem	4	det	_	EnLemma=that
+4	man	man	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=man
+5	on	on	ADP	IN	_	7	case	_	EnLemma=on
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	road	road	NOUN	NN	Number=Sing	1	obl	_	EnLemma=road
+8	?	?	PUNCT	.	_	1	punct	_	EnLemma=?
+
+# sent_id = 22
+# text = The road is long and rocky.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	road	road	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=road
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	long	long	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=long
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	rocky	rocky	ADJ	JJ	Degree=Pos	4	conj	_	EnLemma=rocky
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 23
+# text = The mountain is high, and there is snow.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	mountain	mountain	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=mountain
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	high	high	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=high
+5	,	,	PUNCT	,	_	8	punct	_	EnLemma=,
+6	and	and	CCONJ	CC	_	8	cc	_	EnLemma=and
+7	there	there	PRON	EX	PronType=Dem	8	expl	_	EnLemma=there
+8	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	EnLemma=be
+9	snow	snow	NOUN	NN	Number=Sing	8	nsubj	_	EnLemma=snow
+10	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 24
+# text = There is no one at home.
+# annotation_version = 2
+1	There	there	PRON	EX	PronType=Dem	2	expl	_	EnLemma=there
+2	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be
+3	no	no	DET	DT	PronType=Neg	4	det	_	EnLemma=no
+4	one	one	PRON	NN	Number=Sing|PronType=Neg	2	nsubj	_	EnLemma=one
+5	at	at	ADP	IN	_	6	case	_	EnLemma=at
+6	home	home	NOUN	NN	Number=Sing	4	nmod	_	EnLemma=home
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 25
+# text = The village is far from the sea.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	village	village	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=village
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	far	far	ADV	RB	Degree=Pos	0	root	_	EnLemma=far
+5	from	from	ADP	IN	_	7	case	_	EnLemma=from
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sea	sea	NOUN	NN	Number=Sing	4	obl	_	EnLemma=sea
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 26
+# text = They go along the road together.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	go	go	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go
+3	along	along	ADP	IN	_	5	case	_	EnLemma=along
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	road	road	NOUN	NN	Number=Sing	2	obl	_	EnLemma=road
+6	together	together	ADV	RB	_	2	advmod	_	EnLemma=together
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 27
+# text = The wife hears a sound at the window.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wife	wife	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=wife
+3	hears	hear	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+5	sound	sound	NOUN	NN	Number=Sing	3	obj	_	EnLemma=sound
+6	at	at	ADP	IN	_	8	case	_	EnLemma=at
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	window	window	NOUN	NN	Number=Sing	3	obl	_	EnLemma=window
+9	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 28
+# text = Her family lives in a town.
+# annotation_version = 2
+1	Her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her
+2	family	family	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=family
+3	lives	live	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=live
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+6	town	town	NOUN	NN	Number=Sing	3	obl	_	EnLemma=town
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 29
+# text = The wolf is hunting in the dark.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wolf	wolf	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=wolf
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	EnLemma=be
+4	hunting	hunt	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	EnLemma=hunt
+5	in	in	ADP	IN	_	7	case	_	EnLemma=in
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	dark	dark	NOUN	NN	Number=Sing	4	obl	_	EnLemma=dark
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 30
+# text = The sheep rest in the field.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the
+2	sheep	sheep	NOUN	NNS	Number=Sing	3	compound	_	EnLemma=sheep
+3	rest	rest	NOUN	NN	Number=Sing	0	root	_	EnLemma=rest
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	field	field	NOUN	NN	Number=Sing	3	nmod	_	EnLemma=field
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 31
+# text = He would not leave his family.
+# annotation_version = 2
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	EnLemma=he
+2	would	would	AUX	MD	VerbForm=Fin	4	aux	_	EnLemma=would
+3	not	not	PART	RB	Polarity=Neg	4	advmod	_	EnLemma=not
+4	leave	leave	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=leave
+5	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	EnLemma=his
+6	family	family	NOUN	NN	Number=Sing	4	obj	_	EnLemma=family
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 32
+# text = The sailor returns home from the sea.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sailor	sailor	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=sailor
+3	returns	return	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=return
+4	home	home	ADV	RB	_	3	advmod	_	EnLemma=home
+5	from	from	ADP	IN	_	7	case	_	EnLemma=from
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sea	sea	NOUN	NN	Number=Sing	3	obl	_	EnLemma=sea
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 33
+# text = The child calls for food.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	child	child	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=child
+3	calls	call	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=call
+4	for	for	ADP	IN	_	5	case	_	EnLemma=for
+5	food	food	NOUN	NN	Number=Sing	3	obl	_	EnLemma=food
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 34
+# text = Mary gives food to the old man.
+# annotation_version = 2
+1	Mary	Mary	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Mary
+2	gives	give	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=give
+3	food	food	NOUN	NN	Number=Sing	2	obj	_	EnLemma=food
+4	to	to	ADP	IN	_	7	case	_	EnLemma=to
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+6	old	old	ADJ	JJ	Degree=Pos	7	amod	_	EnLemma=old
+7	man	man	NOUN	NN	Number=Sing	2	obl	_	EnLemma=man
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 35
+# text = The lady speaks to the child.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	lady	lady	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=lady
+3	speaks	speak	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=speak
+4	to	to	ADP	IN	_	6	case	_	EnLemma=to
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	child	child	NOUN	NN	Number=Sing	3	obl	_	EnLemma=child
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 36
+# text = Paul replies, and the lady hears his word.
+# annotation_version = 2
+1	Paul	Paul	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Paul
+2	replies	reply	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=reply
+3	,	,	PUNCT	,	_	7	punct	_	EnLemma=,
+4	and	and	CCONJ	CC	_	7	cc	_	EnLemma=and
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	lady	lady	NOUN	NN	Number=Sing	7	nsubj	_	EnLemma=lady
+7	hears	hear	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	EnLemma=hear
+8	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	EnLemma=his
+9	word	word	NOUN	NN	Number=Sing	7	obj	_	EnLemma=word
+10	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 37
+# text = The music begins at the church.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	music	music	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=music
+3	begins	begin	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=begin
+4	at	at	ADP	IN	_	6	case	_	EnLemma=at
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	church	church	NOUN	NN	Number=Sing	3	obl	_	EnLemma=church
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 38
+# text = The song is long and slow.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	song	song	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=song
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	long	long	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=long
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	slow	slow	ADJ	JJ	Degree=Pos	4	conj	_	EnLemma=slow
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 39
+# text = The instrument has a strong sound.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	instrument	instrument	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=instrument
+3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+4	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+5	strong	strong	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=strong
+6	sound	sound	NOUN	NN	Number=Sing	3	obj	_	EnLemma=sound
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 40
+# text = Jon is bold, but the wolf is very strong.
+# annotation_version = 2
+1	Jon	John	PROPN	NNP	Number=Sing	3	nsubj	_	EnLemma=John
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	EnLemma=be
+3	bold	bold	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=bold
+4	,	,	PUNCT	,	_	10	punct	_	EnLemma=,
+5	but	but	CCONJ	CC	_	10	cc	_	EnLemma=but
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	wolf	wolf	NOUN	NN	Number=Sing	10	nsubj	_	EnLemma=wolf
+8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	EnLemma=be
+9	very	very	ADV	RB	_	10	advmod	_	EnLemma=very
+10	strong	strong	ADJ	JJ	Degree=Pos	3	conj	_	EnLemma=strong
+11	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 41
+# text = They fight, and the wolf goes back to the mountain.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	fight	fight	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=fight
+3	,	,	PUNCT	,	_	7	punct	_	EnLemma=,
+4	and	and	CCONJ	CC	_	7	cc	_	EnLemma=and
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	wolf	wolf	NOUN	NN	Number=Sing	7	nsubj	_	EnLemma=wolf
+7	goes	go	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	EnLemma=go
+8	back	back	ADV	RB	_	7	advmod	_	EnLemma=back
+9	to	to	ADP	IN	_	11	case	_	EnLemma=to
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	EnLemma=the
+11	mountain	mountain	NOUN	NN	Number=Sing	7	obl	_	EnLemma=mountain
+12	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 42
+# text = The shepherd kills no animal.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	shepherd	shepherd	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=shepherd
+3	kills	kill	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=kill
+4	no	no	DET	DT	PronType=Neg	5	det	_	EnLemma=no
+5	animal	animal	NOUN	NN	Number=Sing	3	obj	_	EnLemma=animal
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 43
+# text = The army is in the village.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	army	army	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=army
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	village	village	NOUN	NN	Number=Sing	0	root	_	EnLemma=village
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 44
+# text = The war is over, and the sailor comes home.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	war	war	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=war
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	over	over	ADV	RB	_	0	root	_	EnLemma=over
+5	,	,	PUNCT	,	_	9	punct	_	EnLemma=,
+6	and	and	CCONJ	CC	_	9	cc	_	EnLemma=and
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	sailor	sailor	NOUN	NN	Number=Sing	9	nsubj	_	EnLemma=sailor
+9	comes	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	EnLemma=come
+10	home	home	ADV	RB	_	9	advmod	_	EnLemma=home
+11	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 45
+# text = There is trouble in the town.
+# annotation_version = 2
+1	There	there	PRON	EX	PronType=Dem	2	expl	_	EnLemma=there
+2	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be
+3	trouble	trouble	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=trouble
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	town	town	NOUN	NN	Number=Sing	3	nmod	_	EnLemma=town
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 46
+# text = The people are happy now.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	people	person	NOUN	NNS	Number=Plur	4	nsubj	_	EnLemma=person
+3	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	happy	happy	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=happy
+5	now	now	ADV	RB	PronType=Dem	4	advmod	_	EnLemma=now
+6	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 47
+# text = It is nighttime, and the moon is in the sky.
+# annotation_version = 2
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	EnLemma=it
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	EnLemma=be
+3	nighttime	nighttime	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=nighttime
+4	,	,	PUNCT	,	_	11	punct	_	EnLemma=,
+5	and	and	CCONJ	CC	_	11	cc	_	EnLemma=and
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	moon	moon	NOUN	NN	Number=Sing	11	nsubj	_	EnLemma=moon
+8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	EnLemma=be
+9	in	in	ADP	IN	_	11	case	_	EnLemma=in
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	EnLemma=the
+11	sky	sky	NOUN	NN	Number=Sing	3	conj	_	EnLemma=sky
+12	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 48
+# text = The lamp is on the table.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	lamp	lamp	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=lamp
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	on	on	ADP	IN	_	6	case	_	EnLemma=on
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	table	table	NOUN	NN	Number=Sing	0	root	_	EnLemma=table
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 49
+# text = Mary sets the table for her family.
+# annotation_version = 2
+1	Mary	Mary	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Mary
+2	sets	set	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=set
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	table	table	NOUN	NN	Number=Sing	2	obj	_	EnLemma=table
+5	for	for	ADP	IN	_	7	case	_	EnLemma=for
+6	her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	EnLemma=her
+7	family	family	NOUN	NN	Number=Sing	2	obl	_	EnLemma=family
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 50
+# text = He opens the window and sees the stars.
+# annotation_version = 2
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=he
+2	opens	open	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=open
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	window	window	NOUN	NN	Number=Sing	2	obj	_	EnLemma=window
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	sees	see	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	EnLemma=see
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	stars	star	NOUN	NNS	Number=Plur	6	obj	_	EnLemma=star
+9	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 51
+# text = The child rests near the lamp.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	child	child	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=child
+3	rests	rest	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rest
+4	near	near	ADP	IN	_	6	case	_	EnLemma=near
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	lamp	lamp	NOUN	NN	Number=Sing	3	obl	_	EnLemma=lamp
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 52
+# text = A trumpeter plays in the square.
+# annotation_version = 2
+1	A	a	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a
+2	trumpeter	trumpeter	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=trumpeter
+3	plays	play	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=play
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	square	square	NOUN	NN	Number=Sing	3	obl	_	EnLemma=square
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 53
+# text = The orchestra begins at the second hour.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	orchestra	orchestra	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=orchestra
+3	begins	begin	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=begin
+4	at	at	ADP	IN	_	7	case	_	EnLemma=at
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+6	second	second	ADJ	JJ	Degree=Pos|NumForm=Word|NumType=Ord	7	amod	_	EnLemma=second
+7	hour	hour	NOUN	NN	Number=Sing	3	obl	_	EnLemma=hour
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 54
+# text = They hear the saxophone from the harbour.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	hear	hear	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	saxophone	saxophone	NOUN	NN	Number=Sing	2	obj	_	EnLemma=saxophone
+5	from	from	ADP	IN	_	7	case	_	EnLemma=from
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	harbour	harbour	NOUN	NN	Number=Sing	2	obl	_	EnLemma=harbour
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 55
+# text = The ferry leaves at the first hour.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	ferry	ferry	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=ferry
+3	leaves	leave	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=leave
+4	at	at	ADP	IN	_	7	case	_	EnLemma=at
+5	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+6	first	first	ADJ	JJ	Degree=Pos|NumForm=Word|NumType=Ord	7	amod	_	EnLemma=first
+7	hour	hour	NOUN	NN	Number=Sing	3	obl	_	EnLemma=hour
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 56
+# text = She writes her name on the letter.
+# annotation_version = 2
+1	She	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=she
+2	writes	write	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=write
+3	her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	EnLemma=her
+4	name	name	NOUN	NN	Number=Sing	2	obj	_	EnLemma=name
+5	on	on	ADP	IN	_	7	case	_	EnLemma=on
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	letter	letter	NOUN	NN	Number=Sing	2	obl	_	EnLemma=letter
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 57
+# text = Samuel gives the letter to his wife.
+# annotation_version = 2
+1	Samuel	Samuel	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Samuel
+2	gives	give	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=give
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	letter	letter	NOUN	NN	Number=Sing	2	obj	_	EnLemma=letter
+5	to	to	ADP	IN	_	7	case	_	EnLemma=to
+6	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	EnLemma=his
+7	wife	wife	NOUN	NN	Number=Sing	2	obl	_	EnLemma=wife
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 58
+# text = Her hand is on his hand.
+# annotation_version = 2
+1	Her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her
+2	hand	hand	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=hand
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	on	on	ADP	IN	_	6	case	_	EnLemma=on
+5	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	EnLemma=his
+6	hand	hand	NOUN	NN	Number=Sing	0	root	_	EnLemma=hand
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 59
+# text = The sun rises over the sea.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sun	sun	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=sun
+3	rises	rise	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rise
+4	over	over	ADP	IN	_	6	case	_	EnLemma=over
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	sea	sea	NOUN	NN	Number=Sing	3	obl	_	EnLemma=sea
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 60
+# text = The moon rises over the mountain.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	moon	moon	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=moon
+3	rises	rise	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rise
+4	over	over	ADP	IN	_	6	case	_	EnLemma=over
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	mountain	mountain	NOUN	NN	Number=Sing	3	obl	_	EnLemma=mountain
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 61
+# text = The sheep go into the field.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sheep	sheep	NOUN	NNS	Number=Plur	3	nsubj	_	EnLemma=sheep
+3	go	go	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go
+4	into	into	ADP	IN	_	6	case	_	EnLemma=into
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	field	field	NOUN	NN	Number=Sing	3	obl	_	EnLemma=field
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 62
+# text = The shepherd leads the sheep along the road.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	shepherd	shepherd	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=shepherd
+3	leads	lead	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=lead
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	sheep	sheep	NOUN	NNS	Number=Plur	3	obj	_	EnLemma=sheep
+6	along	along	ADP	IN	_	8	case	_	EnLemma=along
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	road	road	NOUN	NN	Number=Sing	3	obl	_	EnLemma=road
+9	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 63
+# text = The wolf is behind the sheep.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wolf	wolf	NOUN	NN	Number=Sing	6	nsubj	_	EnLemma=wolf
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+4	behind	behind	ADP	IN	_	6	case	_	EnLemma=behind
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	sheep	sheep	NOUN	NN	Number=Sing	0	root	_	EnLemma=sheep
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 64
+# text = Jon sees the wolf and calls to Paul.
+# annotation_version = 2
+1	Jon	John	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=John
+2	sees	see	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=see
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	wolf	wolf	NOUN	NN	Number=Sing	2	obj	_	EnLemma=wolf
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	calls	call	NOUN	NNS	Number=Plur	4	conj	_	EnLemma=call
+7	to	to	ADP	IN	_	8	case	_	EnLemma=to
+8	Paul	Paul	PROPN	NNP	Number=Sing	2	obl	_	EnLemma=Paul
+9	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 65
+# text = Paul hears the call and comes.
+# annotation_version = 2
+1	Paul	Paul	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Paul
+2	hears	hear	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	call	call	NOUN	NN	Number=Sing	2	obj	_	EnLemma=call
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	comes	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	EnLemma=come
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 66
+# text = They fight the wolf together.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	fight	fight	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=fight
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	wolf	wolf	NOUN	NN	Number=Sing	2	obj	_	EnLemma=wolf
+5	together	together	ADV	RB	_	2	advmod	_	EnLemma=together
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 67
+# text = The wolf goes back into the dark.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wolf	wolf	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=wolf
+3	goes	go	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go
+4	back	back	ADV	RB	_	3	advmod	_	EnLemma=back
+5	into	into	ADP	IN	_	7	case	_	EnLemma=into
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	dark	dark	NOUN	NN	Number=Sing	3	obl	_	EnLemma=dark
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 68
+# text = The sheep are all in the field.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sheep	sheep	NOUN	NNS	Number=Plur	7	nsubj	_	EnLemma=sheep
+3	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	EnLemma=be
+4	all	all	ADV	RB	_	7	advmod	_	EnLemma=all
+5	in	in	ADP	IN	_	7	case	_	EnLemma=in
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	field	field	NOUN	NN	Number=Sing	0	root	_	EnLemma=field
+8	.	.	PUNCT	.	_	7	punct	_	EnLemma=.
+
+# sent_id = 69
+# text = That is the end of the war.
+# annotation_version = 2
+1	That	that	PRON	DT	Number=Sing|PronType=Dem	4	nsubj	_	EnLemma=that
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	end	end	NOUN	NN	Number=Sing	0	root	_	EnLemma=end
+5	of	of	ADP	IN	_	7	case	_	EnLemma=of
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	war	war	NOUN	NN	Number=Sing	4	nmod	_	EnLemma=war
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 70
+# text = There are three trees near the church.
+# annotation_version = 2
+1	There	there	PRON	EX	PronType=Dem	2	expl	_	EnLemma=there
+2	are	be	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be
+3	three	three	NUM	CD	NumForm=Word|NumType=Card	4	nummod	_	EnLemma=three
+4	trees	tree	NOUN	NNS	Number=Plur	2	nsubj	_	EnLemma=tree
+5	near	near	ADP	IN	_	7	case	_	EnLemma=near
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	church	church	NOUN	NN	Number=Sing	4	nmod	_	EnLemma=church
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 71
+# text = Many people live in the village.
+# annotation_version = 2
+1	Many	many	ADJ	JJ	Degree=Pos	2	amod	_	EnLemma=many
+2	people	person	NOUN	NNS	Number=Plur	3	nsubj	_	EnLemma=person
+3	live	live	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=live
+4	in	in	ADP	IN	_	6	case	_	EnLemma=in
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	village	village	NOUN	NN	Number=Sing	3	obl	_	EnLemma=village
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 72
+# text = Every child knows the song.
+# annotation_version = 2
+1	Every	every	DET	DT	PronType=Ind	2	det	_	EnLemma=every
+2	child	child	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=child
+3	knows	know	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=know
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	song	song	NOUN	NN	Number=Sing	3	obj	_	EnLemma=song
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 73
+# text = The old clock is still in the square.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the
+2	old	old	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=old
+3	clock	clock	NOUN	NN	Number=Sing	8	nsubj	_	EnLemma=clock
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	EnLemma=be
+5	still	still	ADV	RB	_	8	advmod	_	EnLemma=still
+6	in	in	ADP	IN	_	8	case	_	EnLemma=in
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	square	square	NOUN	NN	Number=Sing	0	root	_	EnLemma=square
+9	.	.	PUNCT	.	_	8	punct	_	EnLemma=.
+
+# sent_id = 74
+# text = It is the hour, and the clock begins to move.
+# annotation_version = 2
+1	It	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	EnLemma=it
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	hour	hour	NOUN	NN	Number=Sing	0	root	_	EnLemma=hour
+5	,	,	PUNCT	,	_	9	punct	_	EnLemma=,
+6	and	and	CCONJ	CC	_	9	cc	_	EnLemma=and
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	clock	clock	NOUN	NN	Number=Sing	9	nsubj	_	EnLemma=clock
+9	begins	begin	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	EnLemma=begin
+10	to	to	PART	TO	_	11	mark	_	EnLemma=to
+11	move	move	VERB	VB	VerbForm=Inf	9	xcomp	_	EnLemma=move
+12	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 75
+# text = He holds the case in his hand.
+# annotation_version = 2
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=he
+2	holds	hold	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hold
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the
+4	case	case	NOUN	NN	Number=Sing	2	obj	_	EnLemma=case
+5	in	in	ADP	IN	_	7	case	_	EnLemma=in
+6	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	EnLemma=his
+7	hand	hand	NOUN	NN	Number=Sing	2	obl	_	EnLemma=hand
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 76
+# text = The case is black and old.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	case	case	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=case
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	black	black	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=black
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	old	old	ADJ	JJ	Degree=Pos	4	conj	_	EnLemma=old
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 77
+# text = In the case is an instrument.
+# annotation_version = 2
+1	In	in	ADP	IN	_	3	case	_	EnLemma=in
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the
+3	case	case	NOUN	NN	Number=Sing	6	obl	_	EnLemma=case
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	EnLemma=be
+5	an	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+6	instrument	instrument	NOUN	NN	Number=Sing	0	root	_	EnLemma=instrument
+7	.	.	PUNCT	.	_	6	punct	_	EnLemma=.
+
+# sent_id = 78
+# text = The instrument is a saxophone.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	instrument	instrument	NOUN	NN	Number=Sing	5	nsubj	_	EnLemma=instrument
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+5	saxophone	saxophone	NOUN	NN	Number=Sing	0	root	_	EnLemma=saxophone
+6	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 79
+# text = The lady plays a different song.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	lady	lady	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=lady
+3	plays	play	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=play
+4	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a
+5	different	different	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=different
+6	song	song	NOUN	NN	Number=Sing	3	obj	_	EnLemma=song
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 80
+# text = Her song is happy.
+# annotation_version = 2
+1	Her	her	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her
+2	song	song	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=song
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	happy	happy	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=happy
+5	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 81
+# text = The sound is low, and then it is high.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sound	sound	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=sound
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	low	low	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=low
+5	,	,	PUNCT	,	_	10	punct	_	EnLemma=,
+6	and	and	CCONJ	CC	_	10	cc	_	EnLemma=and
+7	then	then	ADV	RB	PronType=Dem	10	advmod	_	EnLemma=then
+8	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	EnLemma=it
+9	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	EnLemma=be
+10	high	high	ADJ	JJ	Degree=Pos	4	conj	_	EnLemma=high
+11	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 82
+# text = The people gather and hear the music.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	people	person	NOUN	NNS	Number=Plur	3	nsubj	_	EnLemma=person
+3	gather	gather	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=gather
+4	and	and	CCONJ	CC	_	5	cc	_	EnLemma=and
+5	hear	hear	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	EnLemma=hear
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	music	music	NOUN	NN	Number=Sing	5	obj	_	EnLemma=music
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 83
+# text = They dance in the square all the time.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they
+2	dance	dance	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=dance
+3	in	in	ADP	IN	_	5	case	_	EnLemma=in
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	square	square	NOUN	NN	Number=Sing	2	obl	_	EnLemma=square
+6	all	all	DET	PDT	PronType=Ind	8	det:predet	_	EnLemma=all
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	time	time	NOUN	NN	Number=Sing	2	obl:unmarked	_	EnLemma=time
+9	.	.	PUNCT	.	_	2	punct	_	EnLemma=.
+
+# sent_id = 84
+# text = The old sailor speaks of the sea.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the
+2	old	old	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=old
+3	sailor	sailor	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=sailor
+4	speaks	speak	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=speak
+5	of	of	ADP	IN	_	7	case	_	EnLemma=of
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sea	sea	NOUN	NN	Number=Sing	4	obl	_	EnLemma=sea
+8	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 85
+# text = Mary is not at home.
+# annotation_version = 2
+1	Mary	Mary	PROPN	NNP	Number=Sing	5	nsubj	_	EnLemma=Mary
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+3	not	not	PART	RB	Polarity=Neg	5	advmod	_	EnLemma=not
+4	at	at	ADP	IN	_	5	case	_	EnLemma=at
+5	home	home	NOUN	NN	Number=Sing	0	root	_	EnLemma=home
+6	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 86
+# text = The window is open.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	window	window	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=window
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	open	open	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=open
+5	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 87
+# text = The sea is wide and dark.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sea	sea	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=sea
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	wide	wide	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=wide
+5	and	and	CCONJ	CC	_	6	cc	_	EnLemma=and
+6	dark	dark	ADJ	JJ	Degree=Pos	4	conj	_	EnLemma=dark
+7	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 88
+# text = A single star is in the sky.
+# annotation_version = 2
+1	A	a	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a
+2	single	single	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=single
+3	star	star	NOUN	NN	Number=Sing	7	nsubj	_	EnLemma=star
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	EnLemma=be
+5	in	in	ADP	IN	_	7	case	_	EnLemma=in
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the
+7	sky	sky	NOUN	NN	Number=Sing	0	root	_	EnLemma=sky
+8	.	.	PUNCT	.	_	7	punct	_	EnLemma=.
+
+# sent_id = 89
+# text = The wolf has an eye on the sheep.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	wolf	wolf	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=wolf
+3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+4	an	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+5	eye	eye	NOUN	NN	Number=Sing	3	obj	_	EnLemma=eye
+6	on	on	ADP	IN	_	8	case	_	EnLemma=on
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the
+8	sheep	sheep	NOUN	NNS	Number=Sing	5	nmod	_	EnLemma=sheep
+9	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 90
+# text = The shepherd has a lamp and a strong hand.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	shepherd	shepherd	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=shepherd
+3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+4	a	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	EnLemma=a
+5	lamp	lamp	NOUN	NN	Number=Sing	3	obj	_	EnLemma=lamp
+6	and	and	CCONJ	CC	_	9	cc	_	EnLemma=and
+7	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	EnLemma=a
+8	strong	strong	ADJ	JJ	Degree=Pos	9	amod	_	EnLemma=strong
+9	hand	hand	NOUN	NN	Number=Sing	5	conj	_	EnLemma=hand
+10	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 91
+# text = Jon and Paul are young, but they are bold.
+# annotation_version = 2
+1	Jon	John	PROPN	NNP	Number=Sing	5	nsubj	_	EnLemma=John
+2	and	and	CCONJ	CC	_	3	cc	_	EnLemma=and
+3	Paul	Paul	PROPN	NNP	Number=Sing	1	conj	_	EnLemma=Paul
+4	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	EnLemma=be
+5	young	young	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=young
+6	,	,	PUNCT	,	_	10	punct	_	EnLemma=,
+7	but	but	CCONJ	CC	_	10	cc	_	EnLemma=but
+8	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	EnLemma=they
+9	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	EnLemma=be
+10	bold	bold	ADJ	JJ	Degree=Pos	5	conj	_	EnLemma=bold
+11	.	.	PUNCT	.	_	5	punct	_	EnLemma=.
+
+# sent_id = 92
+# text = The army leaves the town.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	army	army	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=army
+3	leaves	leave	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=leave
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	town	town	NOUN	NN	Number=Sing	3	obj	_	EnLemma=town
+6	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 93
+# text = The town is dark now.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	town	town	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=town
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	dark	dark	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=dark
+5	now	now	ADV	RB	PronType=Dem	4	advmod	_	EnLemma=now
+6	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 94
+# text = The family has food, and they rest.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	family	family	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=family
+3	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have
+4	food	food	NOUN	NN	Number=Sing	3	obj	_	EnLemma=food
+5	,	,	PUNCT	,	_	8	punct	_	EnLemma=,
+6	and	and	CCONJ	CC	_	8	cc	_	EnLemma=and
+7	they	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	EnLemma=they
+8	rest	rest	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	EnLemma=rest
+9	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 95
+# text = The sailor is far from home, but he writes to his wife.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	sailor	sailor	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=sailor
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be
+4	far	far	ADV	RB	Degree=Pos	0	root	_	EnLemma=far
+5	from	from	ADP	IN	_	6	case	_	EnLemma=from
+6	home	home	NOUN	NN	Number=Sing	4	obl	_	EnLemma=home
+7	,	,	PUNCT	,	_	10	punct	_	EnLemma=,
+8	but	but	CCONJ	CC	_	10	cc	_	EnLemma=but
+9	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	EnLemma=he
+10	writes	write	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	EnLemma=write
+11	to	to	ADP	IN	_	13	case	_	EnLemma=to
+12	his	his	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	EnLemma=his
+13	wife	wife	NOUN	NN	Number=Sing	10	obl	_	EnLemma=wife
+14	.	.	PUNCT	.	_	4	punct	_	EnLemma=.
+
+# sent_id = 96
+# text = He would return before the year ends.
+# annotation_version = 2
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	EnLemma=he
+2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	EnLemma=would
+3	return	return	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=return
+4	before	before	SCONJ	IN	_	7	mark	_	EnLemma=before
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	year	year	NOUN	NN	Number=Sing	7	nsubj	_	EnLemma=year
+7	ends	end	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	EnLemma=end
+8	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 97
+# text = They would gather at the harbour.
+# annotation_version = 2
+1	They	they	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	EnLemma=they
+2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	EnLemma=would
+3	gather	gather	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=gather
+4	at	at	ADP	IN	_	6	case	_	EnLemma=at
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the
+6	harbour	harbour	NOUN	NN	Number=Sing	3	obl	_	EnLemma=harbour
+7	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 98
+# text = The ferry reaches the village at the last hour.
+# annotation_version = 2
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the
+2	ferry	ferry	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=ferry
+3	reaches	reach	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=reach
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	village	village	NOUN	NN	Number=Sing	3	obj	_	EnLemma=village
+6	at	at	ADP	IN	_	9	case	_	EnLemma=at
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	EnLemma=the
+8	last	last	ADJ	JJ	Degree=Pos	9	amod	_	EnLemma=last
+9	hour	hour	NOUN	NN	Number=Sing	3	obl	_	EnLemma=hour
+10	.	.	PUNCT	.	_	3	punct	_	EnLemma=.
+
+# sent_id = 99
+# text = Who would play the song?
+# annotation_version = 2
+1	Who	who	PRON	WP	Case=Nom|PronType=Int	3	nsubj	_	EnLemma=who
+2	would	would	AUX	MD	VerbForm=Fin	3	aux	_	EnLemma=would
+3	play	play	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=play
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the
+5	song	song	NOUN	NN	Number=Sing	3	obj	_	EnLemma=song
+6	?	?	PUNCT	.	_	3	punct	_	EnLemma=?
+

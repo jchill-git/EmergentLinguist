@@ -1,0 +1,1159 @@
+# sent_id = 1
+# text = shoropa vava kono shinito zithaku lo .
+# annotation_version = 2
+1	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a|OrigId=5|Orig=a
+2	vava	vava	NOUN	NN	Number=Sing	0	root	_	EnLemma=sailor|OrigId=6|Orig=sailor
+3	kono	vusha	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=4|Orig=was
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=1|Orig=The
+5	zithaku	zithaku	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=man|OrigId=3|Orig=man
+6	lo	lo	ADJ	JJ	Degree=Pos	5	amod	_	EnLemma=old|OrigId=2|Orig=old
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 2
+# text = kupute shinito pezime zakuro lashu shinito shothu .
+# annotation_version = 2
+1	kupute	kupute	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=high|OrigId=4|Orig=high
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	pezime	pezime	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sky|OrigId=7|Orig=sky
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=5|Orig=in
+5	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	shothu	shothu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sun|OrigId=2|Orig=sun
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 3
+# text = thu shoropa she ni .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=2|Orig=has
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=3|Orig=a
+3	she	she	NOUN	NN	Number=Sing	1	obj	_	EnLemma=lamp|OrigId=4|Orig=lamp
+4	ni	ni	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Mary|OrigId=1|Orig=Mary
+5	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=5|Orig=.
+
+# sent_id = 4
+# text = shoropa pususa tho lashu rolemu .
+# annotation_version = 2
+1	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a|OrigId=3|Orig=a
+2	pususa	pususa	NOUN	NN	Number=Sing	0	root	_	EnLemma=shepherd|OrigId=5|Orig=shepherd
+3	tho	tho	ADJ	JJ	Degree=Pos	2	amod	_	EnLemma=young|OrigId=4|Orig=young
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=2|Orig=is
+5	rolemu	ra	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=John|OrigId=1|Orig=Jon
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 5
+# text = shinito thu romuvo lashu shinito reku .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	thu	thu	NOUN	NN	Number=Sing	0	root	_	EnLemma=sheep|OrigId=6|Orig=sheep
+3	romuvo	romuvo	ADP	IN	_	2	case	_	EnLemma=near|OrigId=4|Orig=near
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	reku	reku	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=wolf|OrigId=2|Orig=wolf
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 6
+# text = zameti shinito la sizako lashu shinito to .
+# annotation_version = 2
+1	zameti	zameti	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=low|OrigId=4|Orig=low
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	la	la	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sea|OrigId=7|Orig=sea
+4	sizako	sizako	ADP	IN	_	3	case	_	EnLemma=over|OrigId=5|Orig=over
+5	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	to	to	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=moon|OrigId=2|Orig=moon
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 7
+# text = musasu zisasi shinito lepu po .
+# annotation_version = 2
+1	musasu	musasu	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=would|OrigId=2|Orig=would
+2	zisasi	zisasi	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=play|OrigId=3|Orig=play
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=4|Orig=the
+4	lepu	lepu	NOUN	NN	Number=Sing	2	obj	_	EnLemma=saxophone|OrigId=5|Orig=saxophone
+5	po	po	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Paul|OrigId=1|Orig=Paul
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 8
+# text = shinito lule zakuro lashu shinito veza .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	lule	lule	NOUN	NN	Number=Sing	0	root	_	EnLemma=town|OrigId=6|Orig=town
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=4|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	veza	veza	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=trumpeter|OrigId=2|Orig=trumpeter
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 9
+# text = thu shoropa shera mezeze shinito ru .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=3|Orig=has
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=4|Orig=a
+3	shera	shera	NOUN	NN	Number=Sing	1	obj	_	EnLemma=case|OrigId=6|Orig=case
+4	mezeze	mezeze	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=black|OrigId=5|Orig=black
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	ru	ru	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=lady|OrigId=2|Orig=lady
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 10
+# text = pure tera shinito pito shinito nuzome .
+# annotation_version = 2
+1	pure	pure	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=could|OrigId=3|Orig=could
+2	tera	tera	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=see|OrigId=4|Orig=see
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=5|Orig=the
+4	pito	ka	NOUN	NNS	Number=Plur	2	obj	_	EnLemma=star|OrigId=6|Orig=stars
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	nuzome	nuzome	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=child|OrigId=2|Orig=child
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 11
+# text = shinito vo me lashu shoropa zithaku .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	vo	vo	NOUN	NN	Number=Sing	0	root	_	EnLemma=window|OrigId=6|Orig=window
+3	me	me	ADP	IN	_	2	case	_	EnLemma=at|OrigId=4|Orig=at
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a|OrigId=1|Orig=A
+6	zithaku	zithaku	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=man|OrigId=2|Orig=man
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 12
+# text = shinito soluna zakuro lashu shinito sisethu .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	soluna	soluna	NOUN	NN	Number=Sing	0	root	_	EnLemma=square|OrigId=6|Orig=square
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=4|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	sisethu	sisethu	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=clock|OrigId=2|Orig=clock
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 13
+# text = musasu nopira shoropa ko pi .
+# annotation_version = 2
+1	musasu	musasu	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=would|OrigId=2|Orig=would
+2	nopira	nopira	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=write|OrigId=3|Orig=write
+3	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	4	det	_	EnLemma=a|OrigId=4|Orig=a
+4	ko	ko	NOUN	NN	Number=Sing	2	obj	_	EnLemma=letter|OrigId=5|Orig=letter
+5	pi	pi	PROPN	NNP	Number=Sing	2	nsubj	_	EnLemma=Samuel|OrigId=1|Orig=Samuel
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 14
+# text = nivi lashu me soshate te .
+# annotation_version = 2
+1	nivi	nivi	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=strong|OrigId=5|Orig=strong
+2	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+3	me	me	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=son|OrigId=2|Orig=son
+4	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	EnLemma=her|OrigId=1|Orig=Her
+5	te	te	ADV	RB	_	1	advmod	_	EnLemma=very|OrigId=4|Orig=very
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 15
+# text = shinito mipare zakuro lashu shinito lothu .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	mipare	mipare	NOUN	NN	Number=Sing	0	root	_	EnLemma=harbour|OrigId=6|Orig=harbour
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=4|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	lothu	lothu	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=ferry|OrigId=2|Orig=ferry
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 16
+# text = shinito litho koshuri shinito lo siro lashu luzoshi .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=3|Orig=the
+2	litho	litho	NOUN	NN	Number=Sing	0	root	_	EnLemma=hour|OrigId=5|Orig=hour
+3	koshuri	koshuri	ADJ	JJ	Degree=Pos	2	amod	_	EnLemma=last|OrigId=4|Orig=last
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=7|Orig=the
+5	lo	lo	NOUN	NN	Number=Sing	2	nmod	_	EnLemma=year|OrigId=8|Orig=year
+6	siro	siro	ADP	IN	_	5	case	_	EnLemma=of|OrigId=6|Orig=of
+7	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=2|Orig=is
+8	luzoshi	luzoshi	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=it|OrigId=1|Orig=It
+9	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 17
+# text = lu shinito sheshepu zakuro lepethe .
+# annotation_version = 2
+1	lu	lu	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=gather|OrigId=2|Orig=gather
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=4|Orig=the
+3	sheshepu	sheshepu	NOUN	NN	Number=Sing	1	obl	_	EnLemma=church|OrigId=5|Orig=church
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=3|Orig=in
+5	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 18
+# text = vepi ro piri shinito thatake shinito si .
+# annotation_version = 2
+1	vepi	vepi	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=dance|OrigId=3|Orig=dance
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=4|Orig=and
+3	piri	zisasi	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=play|OrigId=7|Orig=plays
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=5|Orig=the
+5	thatake	thatake	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=orchestra|OrigId=6|Orig=orchestra
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	si	ra	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=person|OrigId=2|Orig=people
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 19
+# text = re shinito teku romuvo shinito thu zemo .
+# annotation_version = 2
+1	re	ki	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=keep|OrigId=2|Orig=keeps
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	teku	teku	NOUN	NN	Number=Sing	1	obl	_	EnLemma=field|OrigId=7|Orig=field
+4	romuvo	romuvo	ADP	IN	_	3	case	_	EnLemma=near|OrigId=5|Orig=near
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=3|Orig=the
+6	thu	thu	NOUN	NN	Number=Sing	1	obj	_	EnLemma=sheep|OrigId=4|Orig=sheep
+7	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=he|OrigId=1|Orig=He
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 20
+# text = kaleri luveka soshate riti kupute .
+# annotation_version = 2
+1	kaleri	muzathe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hold|OrigId=2|Orig=holds
+2	luveka	luveka	NOUN	NN	Number=Sing	1	obj	_	EnLemma=hand|OrigId=4|Orig=hand
+3	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her|OrigId=3|Orig=her
+4	riti	riti	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=she|OrigId=1|Orig=She
+5	kupute	kupute	ADJ	JJ	Degree=Pos	1	xcomp	_	EnLemma=high|OrigId=5|Orig=high
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 21
+# text = sarama shinito me lu lashu sherato zithaku ?
+# annotation_version = 2
+1	sarama	sarama	PRON	WP	Case=Nom|PronType=Int	0	root	_	EnLemma=who|OrigId=1|Orig=Who
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	me	me	NOUN	NN	Number=Sing	1	obl	_	EnLemma=road|OrigId=7|Orig=road
+4	lu	lu	ADP	IN	_	3	case	_	EnLemma=on|OrigId=5|Orig=on
+5	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=2|Orig=is
+6	sherato	sherato	DET	DT	Number=Sing|PronType=Dem	7	det	_	EnLemma=that|OrigId=3|Orig=that
+7	zithaku	zithaku	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=man|OrigId=4|Orig=man
+8	?	?	PUNCT	.	_	1	punct	_	EnLemma=?|OrigId=8|Orig=?
+
+# sent_id = 22
+# text = nethisha ro rana lashu shinito me .
+# annotation_version = 2
+1	nethisha	nethisha	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=long|OrigId=4|Orig=long
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	rana	rana	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=rocky|OrigId=6|Orig=rocky
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	me	me	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=road|OrigId=2|Orig=road
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 23
+# text = kupute ro lashu pu zutu , lashu shinito thozo .
+# annotation_version = 2
+1	kupute	kupute	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=high|OrigId=4|Orig=high
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=6|Orig=and
+3	lashu	vusha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=be|OrigId=8|Orig=is
+4	pu	pu	PRON	EX	PronType=Dem	3	expl	_	EnLemma=there|OrigId=7|Orig=there
+5	zutu	zutu	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=snow|OrigId=9|Orig=snow
+6	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=5|Orig=,
+7	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+8	shinito	shinito	DET	DT	Definite=Def|PronType=Art	9	det	_	EnLemma=the|OrigId=1|Orig=The
+9	thozo	thozo	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=mountain|OrigId=2|Orig=mountain
+10	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=10|Orig=.
+
+# sent_id = 24
+# text = lashu pu vana minomu surore me .
+# annotation_version = 2
+1	lashu	vusha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be|OrigId=2|Orig=is
+2	pu	pu	PRON	EX	PronType=Dem	1	expl	_	EnLemma=there|OrigId=1|Orig=There
+3	vana	vana	DET	DT	PronType=Neg	4	det	_	EnLemma=no|OrigId=3|Orig=no
+4	minomu	minomu	PRON	NN	Number=Sing|PronType=Neg	1	nsubj	_	EnLemma=one|OrigId=4|Orig=one
+5	surore	surore	NOUN	NN	Number=Sing	4	nmod	_	EnLemma=home|OrigId=6|Orig=home
+6	me	me	ADP	IN	_	5	case	_	EnLemma=at|OrigId=5|Orig=at
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 25
+# text = teleza shinito la re lashu shinito za .
+# annotation_version = 2
+1	teleza	teleza	ADV	RB	Degree=Pos	0	root	_	EnLemma=far|OrigId=4|Orig=far
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	la	la	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sea|OrigId=7|Orig=sea
+4	re	re	ADP	IN	_	3	case	_	EnLemma=from|OrigId=5|Orig=from
+5	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	za	za	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=village|OrigId=2|Orig=village
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 26
+# text = shevete shinito me rozu lepethe lesi .
+# annotation_version = 2
+1	shevete	shevete	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go|OrigId=2|Orig=go
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=4|Orig=the
+3	me	me	NOUN	NN	Number=Sing	1	obl	_	EnLemma=road|OrigId=5|Orig=road
+4	rozu	rozu	ADP	IN	_	3	case	_	EnLemma=along|OrigId=3|Orig=along
+5	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+6	lesi	lesi	ADV	RB	_	1	advmod	_	EnLemma=together|OrigId=6|Orig=together
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 27
+# text = thoshuzu shinito vo me shoropa nani shinito kumoki .
+# annotation_version = 2
+1	thoshuzu	zepo	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear|OrigId=3|Orig=hears
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=7|Orig=the
+3	vo	vo	NOUN	NN	Number=Sing	1	obl	_	EnLemma=window|OrigId=8|Orig=window
+4	me	me	ADP	IN	_	3	case	_	EnLemma=at|OrigId=6|Orig=at
+5	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a|OrigId=4|Orig=a
+6	nani	nani	NOUN	NN	Number=Sing	1	obj	_	EnLemma=sound|OrigId=5|Orig=sound
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=1|Orig=The
+8	kumoki	kumoki	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=wife|OrigId=2|Orig=wife
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 28
+# text = vinatha shoropa lule zakuro kure soshate .
+# annotation_version = 2
+1	vinatha	no	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=live|OrigId=3|Orig=lives
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=5|Orig=a
+3	lule	lule	NOUN	NN	Number=Sing	1	obl	_	EnLemma=town|OrigId=6|Orig=town
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=4|Orig=in
+5	kure	kure	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=family|OrigId=2|Orig=family
+6	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	EnLemma=her|OrigId=1|Orig=Her
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 29
+# text = lashu setive shinito mi zakuro shinito reku .
+# annotation_version = 2
+1	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	EnLemma=be|OrigId=3|Orig=is
+2	setive	pa	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	EnLemma=hunt|OrigId=4|Orig=hunting
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=6|Orig=the
+4	mi	mi	NOUN	NN	Number=Sing	2	obl	_	EnLemma=dark|OrigId=7|Orig=dark
+5	zakuro	zakuro	ADP	IN	_	4	case	_	EnLemma=in|OrigId=5|Orig=in
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	reku	reku	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=wolf|OrigId=2|Orig=wolf
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 30
+# text = shinito vuke thu shinito teku zakuro .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=1|Orig=The
+2	vuke	vuke	NOUN	NN	Number=Sing	0	root	_	EnLemma=rest|OrigId=3|Orig=rest
+3	thu	thu	NOUN	NNS	Number=Sing	2	compound	_	EnLemma=sheep|OrigId=2|Orig=sheep
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=5|Orig=the
+5	teku	teku	NOUN	NN	Number=Sing	2	nmod	_	EnLemma=field|OrigId=6|Orig=field
+6	zakuro	zakuro	ADP	IN	_	5	case	_	EnLemma=in|OrigId=4|Orig=in
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 31
+# text = musasu noshe kure sheka zemo rusho .
+# annotation_version = 2
+1	musasu	musasu	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=would|OrigId=2|Orig=would
+2	noshe	noshe	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=leave|OrigId=4|Orig=leave
+3	kure	kure	NOUN	NN	Number=Sing	2	obj	_	EnLemma=family|OrigId=6|Orig=family
+4	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	EnLemma=his|OrigId=5|Orig=his
+5	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=he|OrigId=1|Orig=He
+6	rusho	rusho	PART	RB	Polarity=Neg	2	advmod	_	EnLemma=not|OrigId=3|Orig=not
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 32
+# text = senano shinito la re shinito vava surore .
+# annotation_version = 2
+1	senano	viza	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=return|OrigId=3|Orig=returns
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	la	la	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sea|OrigId=7|Orig=sea
+4	re	re	ADP	IN	_	3	case	_	EnLemma=from|OrigId=5|Orig=from
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	vava	vava	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sailor|OrigId=2|Orig=sailor
+7	surore	surore	ADV	RB	_	1	advmod	_	EnLemma=home|OrigId=4|Orig=home
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 33
+# text = la pa ze shinito nuzome .
+# annotation_version = 2
+1	la	vutu	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=call|OrigId=3|Orig=calls
+2	pa	pa	NOUN	NN	Number=Sing	1	obl	_	EnLemma=food|OrigId=5|Orig=food
+3	ze	ze	ADP	IN	_	2	case	_	EnLemma=for|OrigId=4|Orig=for
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=1|Orig=The
+5	nuzome	nuzome	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=child|OrigId=2|Orig=child
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 34
+# text = ze shinito zithaku lo kinoshu pa ni .
+# annotation_version = 2
+1	ze	zomule	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=give|OrigId=2|Orig=gives
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	zithaku	zithaku	NOUN	NN	Number=Sing	1	obl	_	EnLemma=man|OrigId=7|Orig=man
+4	lo	lo	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=old|OrigId=6|Orig=old
+5	kinoshu	kinoshu	ADP	IN	_	3	case	_	EnLemma=to|OrigId=4|Orig=to
+6	pa	pa	NOUN	NN	Number=Sing	1	obj	_	EnLemma=food|OrigId=3|Orig=food
+7	ni	ni	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Mary|OrigId=1|Orig=Mary
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 35
+# text = re shinito nuzome kinoshu shinito ru .
+# annotation_version = 2
+1	re	seshushu	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=speak|OrigId=3|Orig=speaks
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	nuzome	nuzome	NOUN	NN	Number=Sing	1	obl	_	EnLemma=child|OrigId=6|Orig=child
+4	kinoshu	kinoshu	ADP	IN	_	3	case	_	EnLemma=to|OrigId=4|Orig=to
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	ru	ru	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=lady|OrigId=2|Orig=lady
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 36
+# text = mu ro thoshuzu sevi sheka shinito ru , po .
+# annotation_version = 2
+1	mu	tevo	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=reply|OrigId=2|Orig=replies
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=4|Orig=and
+3	thoshuzu	zepo	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=hear|OrigId=7|Orig=hears
+4	sevi	sevi	NOUN	NN	Number=Sing	3	obj	_	EnLemma=word|OrigId=9|Orig=word
+5	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	EnLemma=his|OrigId=8|Orig=his
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=5|Orig=the
+7	ru	ru	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=lady|OrigId=6|Orig=lady
+8	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=3|Orig=,
+9	po	po	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Paul|OrigId=1|Orig=Paul
+10	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=10|Orig=.
+
+# sent_id = 37
+# text = pu shinito sheshepu me shinito rizoma .
+# annotation_version = 2
+1	pu	zutotha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=begin|OrigId=3|Orig=begins
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	sheshepu	sheshepu	NOUN	NN	Number=Sing	1	obl	_	EnLemma=church|OrigId=6|Orig=church
+4	me	me	ADP	IN	_	3	case	_	EnLemma=at|OrigId=4|Orig=at
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	rizoma	rizoma	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=music|OrigId=2|Orig=music
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 38
+# text = nethisha ro shuso lashu shinito tuzo .
+# annotation_version = 2
+1	nethisha	nethisha	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=long|OrigId=4|Orig=long
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	shuso	shuso	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=slow|OrigId=6|Orig=slow
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	tuzo	tuzo	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=song|OrigId=2|Orig=song
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 39
+# text = thu shoropa nani nivi shinito to .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=3|Orig=has
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=4|Orig=a
+3	nani	nani	NOUN	NN	Number=Sing	1	obj	_	EnLemma=sound|OrigId=6|Orig=sound
+4	nivi	nivi	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=strong|OrigId=5|Orig=strong
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	to	to	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=instrument|OrigId=2|Orig=instrument
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 40
+# text = thenitu vi nivi lashu shinito reku te , lashu rolemu .
+# annotation_version = 2
+1	thenitu	thenitu	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=bold|OrigId=3|Orig=bold
+2	vi	vi	CCONJ	CC	_	3	cc	_	EnLemma=but|OrigId=5|Orig=but
+3	nivi	nivi	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=strong|OrigId=10|Orig=strong
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	EnLemma=be|OrigId=8|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=6|Orig=the
+6	reku	reku	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=wolf|OrigId=7|Orig=wolf
+7	te	te	ADV	RB	_	3	advmod	_	EnLemma=very|OrigId=9|Orig=very
+8	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=4|Orig=,
+9	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=2|Orig=is
+10	rolemu	ra	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=John|OrigId=1|Orig=Jon
+11	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=11|Orig=.
+
+# sent_id = 41
+# text = kuna ro zanovi shinito thozo kinoshu shinito reku po , lepethe .
+# annotation_version = 2
+1	kuna	kuna	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=fight|OrigId=2|Orig=fight
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=4|Orig=and
+3	zanovi	shevete	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=go|OrigId=7|Orig=goes
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=10|Orig=the
+5	thozo	thozo	NOUN	NN	Number=Sing	3	obl	_	EnLemma=mountain|OrigId=11|Orig=mountain
+6	kinoshu	kinoshu	ADP	IN	_	5	case	_	EnLemma=to|OrigId=9|Orig=to
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=5|Orig=the
+8	reku	reku	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=wolf|OrigId=6|Orig=wolf
+9	po	po	ADV	RB	_	3	advmod	_	EnLemma=back|OrigId=8|Orig=back
+10	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=3|Orig=,
+11	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+12	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=12|Orig=.
+
+# sent_id = 42
+# text = le vana luvi shinito pususa .
+# annotation_version = 2
+1	le	kulase	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=kill|OrigId=3|Orig=kills
+2	vana	vana	DET	DT	PronType=Neg	3	det	_	EnLemma=no|OrigId=4|Orig=no
+3	luvi	luvi	NOUN	NN	Number=Sing	1	obj	_	EnLemma=animal|OrigId=5|Orig=animal
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=1|Orig=The
+5	pususa	pususa	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=shepherd|OrigId=2|Orig=shepherd
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 43
+# text = shinito za zakuro lashu shinito to .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	za	za	NOUN	NN	Number=Sing	0	root	_	EnLemma=village|OrigId=6|Orig=village
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=4|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	to	to	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=army|OrigId=2|Orig=army
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 44
+# text = sizako ro sa shinito vava surore , lashu shinito lu .
+# annotation_version = 2
+1	sizako	sizako	ADV	RB	_	0	root	_	EnLemma=over|OrigId=4|Orig=over
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=6|Orig=and
+3	sa	thova	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=come|OrigId=9|Orig=comes
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=7|Orig=the
+5	vava	vava	NOUN	NN	Number=Sing	3	nsubj	_	EnLemma=sailor|OrigId=8|Orig=sailor
+6	surore	surore	ADV	RB	_	3	advmod	_	EnLemma=home|OrigId=10|Orig=home
+7	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=5|Orig=,
+8	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+9	shinito	shinito	DET	DT	Definite=Def|PronType=Art	10	det	_	EnLemma=the|OrigId=1|Orig=The
+10	lu	lu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=war|OrigId=2|Orig=war
+11	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=11|Orig=.
+
+# sent_id = 45
+# text = lashu pu nu shinito lule zakuro .
+# annotation_version = 2
+1	lashu	vusha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be|OrigId=2|Orig=is
+2	pu	pu	PRON	EX	PronType=Dem	1	expl	_	EnLemma=there|OrigId=1|Orig=There
+3	nu	nu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=trouble|OrigId=3|Orig=trouble
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=5|Orig=the
+5	lule	lule	NOUN	NN	Number=Sing	3	nmod	_	EnLemma=town|OrigId=6|Orig=town
+6	zakuro	zakuro	ADP	IN	_	5	case	_	EnLemma=in|OrigId=4|Orig=in
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 46
+# text = pimisi va shinito si tozu .
+# annotation_version = 2
+1	pimisi	pimisi	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=happy|OrigId=4|Orig=happy
+2	va	vusha	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=are
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=1|Orig=The
+4	si	ra	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=person|OrigId=2|Orig=people
+5	tozu	tozu	ADV	RB	PronType=Dem	1	advmod	_	EnLemma=now|OrigId=5|Orig=now
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 47
+# text = misho ro shinito pezime zakuro lashu shinito to , lashu luzoshi .
+# annotation_version = 2
+1	misho	misho	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=nighttime|OrigId=3|Orig=nighttime
+2	ro	ro	CCONJ	CC	_	4	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=10|Orig=the
+4	pezime	pezime	NOUN	NN	Number=Sing	1	conj	_	EnLemma=sky|OrigId=11|Orig=sky
+5	zakuro	zakuro	ADP	IN	_	4	case	_	EnLemma=in|OrigId=9|Orig=in
+6	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	EnLemma=be|OrigId=8|Orig=is
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=6|Orig=the
+8	to	to	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=moon|OrigId=7|Orig=moon
+9	,	,	PUNCT	,	_	4	punct	_	EnLemma=,|OrigId=4|Orig=,
+10	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=2|Orig=is
+11	luzoshi	luzoshi	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=it|OrigId=1|Orig=It
+12	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=12|Orig=.
+
+# sent_id = 48
+# text = shinito kozi lu lashu shinito she .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	kozi	kozi	NOUN	NN	Number=Sing	0	root	_	EnLemma=table|OrigId=6|Orig=table
+3	lu	lu	ADP	IN	_	2	case	_	EnLemma=on|OrigId=4|Orig=on
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	she	she	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=lamp|OrigId=2|Orig=lamp
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 49
+# text = thunoze kure ze soshate shinito kozi ni .
+# annotation_version = 2
+1	thunoze	mezo	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=set|OrigId=2|Orig=sets
+2	kure	kure	NOUN	NN	Number=Sing	1	obl	_	EnLemma=family|OrigId=7|Orig=family
+3	ze	ze	ADP	IN	_	2	case	_	EnLemma=for|OrigId=5|Orig=for
+4	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=her|OrigId=6|Orig=her
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=3|Orig=the
+6	kozi	kozi	NOUN	NN	Number=Sing	1	obj	_	EnLemma=table|OrigId=4|Orig=table
+7	ni	ni	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Mary|OrigId=1|Orig=Mary
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 50
+# text = pe ro pipa shinito pito shinito vo zemo .
+# annotation_version = 2
+1	pe	lite	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=open|OrigId=2|Orig=opens
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	pipa	tera	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=see|OrigId=6|Orig=sees
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=7|Orig=the
+5	pito	ka	NOUN	NNS	Number=Plur	3	obj	_	EnLemma=star|OrigId=8|Orig=stars
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=3|Orig=the
+7	vo	vo	NOUN	NN	Number=Sing	1	obj	_	EnLemma=window|OrigId=4|Orig=window
+8	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=he|OrigId=1|Orig=He
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 51
+# text = sito shinito she romuvo shinito nuzome .
+# annotation_version = 2
+1	sito	vuke	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rest|OrigId=3|Orig=rests
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	she	she	NOUN	NN	Number=Sing	1	obl	_	EnLemma=lamp|OrigId=6|Orig=lamp
+4	romuvo	romuvo	ADP	IN	_	3	case	_	EnLemma=near|OrigId=4|Orig=near
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	nuzome	nuzome	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=child|OrigId=2|Orig=child
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 52
+# text = piri shinito soluna zakuro shoropa veza .
+# annotation_version = 2
+1	piri	zisasi	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=play|OrigId=3|Orig=plays
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	soluna	soluna	NOUN	NN	Number=Sing	1	obl	_	EnLemma=square|OrigId=6|Orig=square
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=4|Orig=in
+5	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a|OrigId=1|Orig=A
+6	veza	veza	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=trumpeter|OrigId=2|Orig=trumpeter
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 53
+# text = pu shinito litho tatila me shinito thatake .
+# annotation_version = 2
+1	pu	zutotha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=begin|OrigId=3|Orig=begins
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	litho	litho	NOUN	NN	Number=Sing	1	obl	_	EnLemma=hour|OrigId=7|Orig=hour
+4	tatila	tatila	ADJ	JJ	Degree=Pos|NumForm=Word|NumType=Ord	3	amod	_	EnLemma=second|OrigId=6|Orig=second
+5	me	me	ADP	IN	_	3	case	_	EnLemma=at|OrigId=4|Orig=at
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	thatake	thatake	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=orchestra|OrigId=2|Orig=orchestra
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 54
+# text = zepo shinito mipare re shinito lepu lepethe .
+# annotation_version = 2
+1	zepo	zepo	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear|OrigId=2|Orig=hear
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	mipare	mipare	NOUN	NN	Number=Sing	1	obl	_	EnLemma=harbour|OrigId=7|Orig=harbour
+4	re	re	ADP	IN	_	3	case	_	EnLemma=from|OrigId=5|Orig=from
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=3|Orig=the
+6	lepu	lepu	NOUN	NN	Number=Sing	1	obj	_	EnLemma=saxophone|OrigId=4|Orig=saxophone
+7	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 55
+# text = the shinito litho savesha me shinito lothu .
+# annotation_version = 2
+1	the	noshe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=leave|OrigId=3|Orig=leaves
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	litho	litho	NOUN	NN	Number=Sing	1	obl	_	EnLemma=hour|OrigId=7|Orig=hour
+4	savesha	savesha	ADJ	JJ	Degree=Pos|NumForm=Word|NumType=Ord	3	amod	_	EnLemma=first|OrigId=6|Orig=first
+5	me	me	ADP	IN	_	3	case	_	EnLemma=at|OrigId=4|Orig=at
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	lothu	lothu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=ferry|OrigId=2|Orig=ferry
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 56
+# text = pashe shinito ko lu vishiso soshate riti .
+# annotation_version = 2
+1	pashe	nopira	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=write|OrigId=2|Orig=writes
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	ko	ko	NOUN	NN	Number=Sing	1	obl	_	EnLemma=letter|OrigId=7|Orig=letter
+4	lu	lu	ADP	IN	_	3	case	_	EnLemma=on|OrigId=5|Orig=on
+5	vishiso	vishiso	NOUN	NN	Number=Sing	1	obj	_	EnLemma=name|OrigId=4|Orig=name
+6	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	EnLemma=her|OrigId=3|Orig=her
+7	riti	riti	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=she|OrigId=1|Orig=She
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 57
+# text = ze kumoki kinoshu sheka shinito ko pi .
+# annotation_version = 2
+1	ze	zomule	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=give|OrigId=2|Orig=gives
+2	kumoki	kumoki	NOUN	NN	Number=Sing	1	obl	_	EnLemma=wife|OrigId=7|Orig=wife
+3	kinoshu	kinoshu	ADP	IN	_	2	case	_	EnLemma=to|OrigId=5|Orig=to
+4	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=his|OrigId=6|Orig=his
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=3|Orig=the
+6	ko	ko	NOUN	NN	Number=Sing	1	obj	_	EnLemma=letter|OrigId=4|Orig=letter
+7	pi	pi	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Samuel|OrigId=1|Orig=Samuel
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 58
+# text = luveka lu sheka lashu luveka soshate .
+# annotation_version = 2
+1	luveka	luveka	NOUN	NN	Number=Sing	0	root	_	EnLemma=hand|OrigId=6|Orig=hand
+2	lu	lu	ADP	IN	_	1	case	_	EnLemma=on|OrigId=4|Orig=on
+3	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	1	nmod:poss	_	EnLemma=his|OrigId=5|Orig=his
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	luveka	luveka	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=hand|OrigId=2|Orig=hand
+6	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	EnLemma=her|OrigId=1|Orig=Her
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 59
+# text = vashu shinito la sizako shinito shothu .
+# annotation_version = 2
+1	vashu	to	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rise|OrigId=3|Orig=rises
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	la	la	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sea|OrigId=6|Orig=sea
+4	sizako	sizako	ADP	IN	_	3	case	_	EnLemma=over|OrigId=4|Orig=over
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	shothu	shothu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sun|OrigId=2|Orig=sun
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 60
+# text = vashu shinito thozo sizako shinito to .
+# annotation_version = 2
+1	vashu	to	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=rise|OrigId=3|Orig=rises
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	thozo	thozo	NOUN	NN	Number=Sing	1	obl	_	EnLemma=mountain|OrigId=6|Orig=mountain
+4	sizako	sizako	ADP	IN	_	3	case	_	EnLemma=over|OrigId=4|Orig=over
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	to	to	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=moon|OrigId=2|Orig=moon
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 61
+# text = shevete shinito teku the shinito thu .
+# annotation_version = 2
+1	shevete	shevete	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go|OrigId=3|Orig=go
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	teku	teku	NOUN	NN	Number=Sing	1	obl	_	EnLemma=field|OrigId=6|Orig=field
+4	the	the	ADP	IN	_	3	case	_	EnLemma=into|OrigId=4|Orig=into
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	thu	thu	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=sheep|OrigId=2|Orig=sheep
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 62
+# text = thesotu shinito me rozu shinito thu shinito pususa .
+# annotation_version = 2
+1	thesotu	piti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=lead|OrigId=3|Orig=leads
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=7|Orig=the
+3	me	me	NOUN	NN	Number=Sing	1	obl	_	EnLemma=road|OrigId=8|Orig=road
+4	rozu	rozu	ADP	IN	_	3	case	_	EnLemma=along|OrigId=6|Orig=along
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=4|Orig=the
+6	thu	thu	NOUN	NNS	Number=Plur	1	obj	_	EnLemma=sheep|OrigId=5|Orig=sheep
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=1|Orig=The
+8	pususa	pususa	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=shepherd|OrigId=2|Orig=shepherd
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 63
+# text = shinito thu zapathu lashu shinito reku .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=5|Orig=the
+2	thu	thu	NOUN	NN	Number=Sing	0	root	_	EnLemma=sheep|OrigId=6|Orig=sheep
+3	zapathu	zapathu	ADP	IN	_	2	case	_	EnLemma=behind|OrigId=4|Orig=behind
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	reku	reku	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=wolf|OrigId=2|Orig=wolf
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 64
+# text = pipa po kinoshu shinito reku ro la rolemu .
+# annotation_version = 2
+1	pipa	tera	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=see|OrigId=2|Orig=sees
+2	po	po	PROPN	NNP	Number=Sing	1	obl	_	EnLemma=Paul|OrigId=8|Orig=Paul
+3	kinoshu	kinoshu	ADP	IN	_	2	case	_	EnLemma=to|OrigId=7|Orig=to
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=3|Orig=the
+5	reku	reku	NOUN	NN	Number=Sing	1	obj	_	EnLemma=wolf|OrigId=4|Orig=wolf
+6	ro	ro	CCONJ	CC	_	7	cc	_	EnLemma=and|OrigId=5|Orig=and
+7	la	vutu	NOUN	NNS	Number=Plur	5	conj	_	EnLemma=call|OrigId=6|Orig=calls
+8	rolemu	ra	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=John|OrigId=1|Orig=Jon
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 65
+# text = thoshuzu ro sa shinito vutu po .
+# annotation_version = 2
+1	thoshuzu	zepo	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hear|OrigId=2|Orig=hears
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	sa	thova	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=come|OrigId=6|Orig=comes
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=3|Orig=the
+5	vutu	vutu	NOUN	NN	Number=Sing	1	obj	_	EnLemma=call|OrigId=4|Orig=call
+6	po	po	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Paul|OrigId=1|Orig=Paul
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 66
+# text = kuna shinito reku lepethe lesi .
+# annotation_version = 2
+1	kuna	kuna	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=fight|OrigId=2|Orig=fight
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=3|Orig=the
+3	reku	reku	NOUN	NN	Number=Sing	1	obj	_	EnLemma=wolf|OrigId=4|Orig=wolf
+4	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+5	lesi	lesi	ADV	RB	_	1	advmod	_	EnLemma=together|OrigId=5|Orig=together
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 67
+# text = zanovi shinito mi the shinito reku po .
+# annotation_version = 2
+1	zanovi	shevete	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=go|OrigId=3|Orig=goes
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	mi	mi	NOUN	NN	Number=Sing	1	obl	_	EnLemma=dark|OrigId=7|Orig=dark
+4	the	the	ADP	IN	_	3	case	_	EnLemma=into|OrigId=5|Orig=into
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	reku	reku	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=wolf|OrigId=2|Orig=wolf
+7	po	po	ADV	RB	_	1	advmod	_	EnLemma=back|OrigId=4|Orig=back
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 68
+# text = shinito teku zakuro va shinito thu mumi .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=6|Orig=the
+2	teku	teku	NOUN	NN	Number=Sing	0	root	_	EnLemma=field|OrigId=7|Orig=field
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=5|Orig=in
+4	va	vusha	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=are
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	thu	thu	NOUN	NNS	Number=Plur	2	nsubj	_	EnLemma=sheep|OrigId=2|Orig=sheep
+7	mumi	mumi	ADV	RB	_	2	advmod	_	EnLemma=all|OrigId=4|Orig=all
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 69
+# text = shinito shemape shinito lu siro lashu sherato .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=3|Orig=the
+2	shemape	shemape	NOUN	NN	Number=Sing	0	root	_	EnLemma=end|OrigId=4|Orig=end
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=6|Orig=the
+4	lu	lu	NOUN	NN	Number=Sing	2	nmod	_	EnLemma=war|OrigId=7|Orig=war
+5	siro	siro	ADP	IN	_	4	case	_	EnLemma=of|OrigId=5|Orig=of
+6	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=2|Orig=is
+7	sherato	sherato	PRON	DT	Number=Sing|PronType=Dem	2	nsubj	_	EnLemma=that|OrigId=1|Orig=That
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 70
+# text = va pu zi teshu shinito sheshepu romuvo .
+# annotation_version = 2
+1	va	vusha	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=be|OrigId=2|Orig=are
+2	pu	pu	PRON	EX	PronType=Dem	1	expl	_	EnLemma=there|OrigId=1|Orig=There
+3	zi	zi	NUM	CD	NumForm=Word|NumType=Card	4	nummod	_	EnLemma=three|OrigId=3|Orig=three
+4	teshu	mithoro	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=tree|OrigId=4|Orig=trees
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=6|Orig=the
+6	sheshepu	sheshepu	NOUN	NN	Number=Sing	4	nmod	_	EnLemma=church|OrigId=7|Orig=church
+7	romuvo	romuvo	ADP	IN	_	6	case	_	EnLemma=near|OrigId=5|Orig=near
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 71
+# text = no shinito za zakuro si kisisa .
+# annotation_version = 2
+1	no	no	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=live|OrigId=3|Orig=live
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=5|Orig=the
+3	za	za	NOUN	NN	Number=Sing	1	obl	_	EnLemma=village|OrigId=6|Orig=village
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=4|Orig=in
+5	si	ra	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=person|OrigId=2|Orig=people
+6	kisisa	kisisa	ADJ	JJ	Degree=Pos	5	amod	_	EnLemma=many|OrigId=1|Orig=Many
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 72
+# text = vekole shinito tuzo kolo nuzome .
+# annotation_version = 2
+1	vekole	tathovu	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=know|OrigId=3|Orig=knows
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=4|Orig=the
+3	tuzo	tuzo	NOUN	NN	Number=Sing	1	obj	_	EnLemma=song|OrigId=5|Orig=song
+4	kolo	kolo	DET	DT	PronType=Ind	5	det	_	EnLemma=every|OrigId=1|Orig=Every
+5	nuzome	nuzome	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=child|OrigId=2|Orig=child
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 73
+# text = shinito soluna zakuro lashu shinito sisethu lo nanala .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=7|Orig=the
+2	soluna	soluna	NOUN	NN	Number=Sing	0	root	_	EnLemma=square|OrigId=8|Orig=square
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=6|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=4|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	sisethu	sisethu	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=clock|OrigId=3|Orig=clock
+7	lo	lo	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=old|OrigId=2|Orig=old
+8	nanala	nanala	ADV	RB	_	2	advmod	_	EnLemma=still|OrigId=5|Orig=still
+9	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 74
+# text = shinito litho ro pu shinito sisethu kinoshu komeko , lashu luzoshi .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=3|Orig=the
+2	litho	litho	NOUN	NN	Number=Sing	0	root	_	EnLemma=hour|OrigId=4|Orig=hour
+3	ro	ro	CCONJ	CC	_	4	cc	_	EnLemma=and|OrigId=6|Orig=and
+4	pu	zutotha	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	EnLemma=begin|OrigId=9|Orig=begins
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=7|Orig=the
+6	sisethu	sisethu	NOUN	NN	Number=Sing	4	nsubj	_	EnLemma=clock|OrigId=8|Orig=clock
+7	kinoshu	kinoshu	PART	TO	_	8	mark	_	EnLemma=to|OrigId=10|Orig=to
+8	komeko	komeko	VERB	VB	VerbForm=Inf	4	xcomp	_	EnLemma=move|OrigId=11|Orig=move
+9	,	,	PUNCT	,	_	4	punct	_	EnLemma=,|OrigId=5|Orig=,
+10	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=2|Orig=is
+11	luzoshi	luzoshi	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	EnLemma=it|OrigId=1|Orig=It
+12	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=12|Orig=.
+
+# sent_id = 75
+# text = kaleri luveka zakuro sheka shinito shera zemo .
+# annotation_version = 2
+1	kaleri	muzathe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=hold|OrigId=2|Orig=holds
+2	luveka	luveka	NOUN	NN	Number=Sing	1	obl	_	EnLemma=hand|OrigId=7|Orig=hand
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=5|Orig=in
+4	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	EnLemma=his|OrigId=6|Orig=his
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=3|Orig=the
+6	shera	shera	NOUN	NN	Number=Sing	1	obj	_	EnLemma=case|OrigId=4|Orig=case
+7	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	EnLemma=he|OrigId=1|Orig=He
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 76
+# text = mezeze ro lo lashu shinito shera .
+# annotation_version = 2
+1	mezeze	mezeze	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=black|OrigId=4|Orig=black
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	lo	lo	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=old|OrigId=6|Orig=old
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	shera	shera	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=case|OrigId=2|Orig=case
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 77
+# text = pa to shinito shera zakuro lashu .
+# annotation_version = 2
+1	pa	shoropa	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a|OrigId=5|Orig=an
+2	to	to	NOUN	NN	Number=Sing	0	root	_	EnLemma=instrument|OrigId=6|Orig=instrument
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=2|Orig=the
+4	shera	shera	NOUN	NN	Number=Sing	2	obl	_	EnLemma=case|OrigId=3|Orig=case
+5	zakuro	zakuro	ADP	IN	_	4	case	_	EnLemma=in|OrigId=1|Orig=In
+6	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=4|Orig=is
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 78
+# text = shoropa lepu lashu shinito to .
+# annotation_version = 2
+1	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	2	det	_	EnLemma=a|OrigId=4|Orig=a
+2	lepu	lepu	NOUN	NN	Number=Sing	0	root	_	EnLemma=saxophone|OrigId=5|Orig=saxophone
+3	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=3|Orig=is
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=1|Orig=The
+5	to	to	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=instrument|OrigId=2|Orig=instrument
+6	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 79
+# text = piri shoropa tuzo le shinito ru .
+# annotation_version = 2
+1	piri	zisasi	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=play|OrigId=3|Orig=plays
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=4|Orig=a
+3	tuzo	tuzo	NOUN	NN	Number=Sing	1	obj	_	EnLemma=song|OrigId=6|Orig=song
+4	le	le	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=different|OrigId=5|Orig=different
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	ru	ru	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=lady|OrigId=2|Orig=lady
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 80
+# text = pimisi lashu tuzo soshate .
+# annotation_version = 2
+1	pimisi	pimisi	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=happy|OrigId=4|Orig=happy
+2	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+3	tuzo	tuzo	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=song|OrigId=2|Orig=song
+4	soshate	soshate	PRON	PRP$	Case=Gen|Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	EnLemma=her|OrigId=1|Orig=Her
+5	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=5|Orig=.
+
+# sent_id = 81
+# text = zameti ro kupute lashu luzoshi posha , lashu shinito nani .
+# annotation_version = 2
+1	zameti	zameti	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=low|OrigId=4|Orig=low
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=6|Orig=and
+3	kupute	kupute	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=high|OrigId=10|Orig=high
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	EnLemma=be|OrigId=9|Orig=is
+5	luzoshi	luzoshi	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	EnLemma=it|OrigId=8|Orig=it
+6	posha	posha	ADV	RB	PronType=Dem	3	advmod	_	EnLemma=then|OrigId=7|Orig=then
+7	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=5|Orig=,
+8	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+9	shinito	shinito	DET	DT	Definite=Def|PronType=Art	10	det	_	EnLemma=the|OrigId=1|Orig=The
+10	nani	nani	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sound|OrigId=2|Orig=sound
+11	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=11|Orig=.
+
+# sent_id = 82
+# text = lu ro zepo shinito rizoma shinito si .
+# annotation_version = 2
+1	lu	lu	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=gather|OrigId=3|Orig=gather
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=4|Orig=and
+3	zepo	zepo	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=hear|OrigId=5|Orig=hear
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=6|Orig=the
+5	rizoma	rizoma	NOUN	NN	Number=Sing	3	obj	_	EnLemma=music|OrigId=7|Orig=music
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=1|Orig=The
+7	si	ra	NOUN	NNS	Number=Plur	1	nsubj	_	EnLemma=person|OrigId=2|Orig=people
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 83
+# text = vepi shinito soluna zakuro mumi shinito lera lepethe .
+# annotation_version = 2
+1	vepi	vepi	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=dance|OrigId=2|Orig=dance
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=4|Orig=the
+3	soluna	soluna	NOUN	NN	Number=Sing	1	obl	_	EnLemma=square|OrigId=5|Orig=square
+4	zakuro	zakuro	ADP	IN	_	3	case	_	EnLemma=in|OrigId=3|Orig=in
+5	mumi	mumi	DET	PDT	PronType=Ind	7	det:predet	_	EnLemma=all|OrigId=6|Orig=all
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=7|Orig=the
+7	lera	lera	NOUN	NN	Number=Sing	1	obl:unmarked	_	EnLemma=time|OrigId=8|Orig=time
+8	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	1	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 84
+# text = re shinito la siro shinito vava lo .
+# annotation_version = 2
+1	re	seshushu	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=speak|OrigId=4|Orig=speaks
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=6|Orig=the
+3	la	la	NOUN	NN	Number=Sing	1	obl	_	EnLemma=sea|OrigId=7|Orig=sea
+4	siro	siro	ADP	IN	_	3	case	_	EnLemma=of|OrigId=5|Orig=of
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	vava	vava	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sailor|OrigId=3|Orig=sailor
+7	lo	lo	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=old|OrigId=2|Orig=old
+8	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 85
+# text = surore me lashu ni rusho .
+# annotation_version = 2
+1	surore	surore	NOUN	NN	Number=Sing	0	root	_	EnLemma=home|OrigId=5|Orig=home
+2	me	me	ADP	IN	_	1	case	_	EnLemma=at|OrigId=4|Orig=at
+3	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=2|Orig=is
+4	ni	ni	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=Mary|OrigId=1|Orig=Mary
+5	rusho	rusho	PART	RB	Polarity=Neg	1	advmod	_	EnLemma=not|OrigId=3|Orig=not
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 86
+# text = lite lashu shinito vo .
+# annotation_version = 2
+1	lite	lite	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=open|OrigId=4|Orig=open
+2	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=1|Orig=The
+4	vo	vo	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=window|OrigId=2|Orig=window
+5	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=5|Orig=.
+
+# sent_id = 87
+# text = kake ro mi lashu shinito la .
+# annotation_version = 2
+1	kake	kake	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=wide|OrigId=4|Orig=wide
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=5|Orig=and
+3	mi	mi	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=dark|OrigId=6|Orig=dark
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+5	shinito	shinito	DET	DT	Definite=Def|PronType=Art	6	det	_	EnLemma=the|OrigId=1|Orig=The
+6	la	la	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sea|OrigId=2|Orig=sea
+7	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 88
+# text = shinito pezime zakuro lashu shoropa ka ke .
+# annotation_version = 2
+1	shinito	shinito	DET	DT	Definite=Def|PronType=Art	2	det	_	EnLemma=the|OrigId=6|Orig=the
+2	pezime	pezime	NOUN	NN	Number=Sing	0	root	_	EnLemma=sky|OrigId=7|Orig=sky
+3	zakuro	zakuro	ADP	IN	_	2	case	_	EnLemma=in|OrigId=5|Orig=in
+4	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	EnLemma=be|OrigId=4|Orig=is
+5	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a|OrigId=1|Orig=A
+6	ka	ka	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=star|OrigId=3|Orig=star
+7	ke	ke	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=single|OrigId=2|Orig=single
+8	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 89
+# text = thu pa to shinito thu lu shinito reku .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=3|Orig=has
+2	pa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=4|Orig=an
+3	to	to	NOUN	NN	Number=Sing	1	obj	_	EnLemma=eye|OrigId=5|Orig=eye
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=7|Orig=the
+5	thu	thu	NOUN	NNS	Number=Sing	3	nmod	_	EnLemma=sheep|OrigId=8|Orig=sheep
+6	lu	lu	ADP	IN	_	5	case	_	EnLemma=on|OrigId=6|Orig=on
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=1|Orig=The
+8	reku	reku	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=wolf|OrigId=2|Orig=wolf
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 90
+# text = thu shoropa she ro shoropa luveka nivi shinito pususa .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=3|Orig=has
+2	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	3	det	_	EnLemma=a|OrigId=4|Orig=a
+3	she	she	NOUN	NN	Number=Sing	1	obj	_	EnLemma=lamp|OrigId=5|Orig=lamp
+4	ro	ro	CCONJ	CC	_	6	cc	_	EnLemma=and|OrigId=6|Orig=and
+5	shoropa	shoropa	DET	DT	Definite=Ind|PronType=Art	6	det	_	EnLemma=a|OrigId=7|Orig=a
+6	luveka	luveka	NOUN	NN	Number=Sing	3	conj	_	EnLemma=hand|OrigId=9|Orig=hand
+7	nivi	nivi	ADJ	JJ	Degree=Pos	6	amod	_	EnLemma=strong|OrigId=8|Orig=strong
+8	shinito	shinito	DET	DT	Definite=Def|PronType=Art	9	det	_	EnLemma=the|OrigId=1|Orig=The
+9	pususa	pususa	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=shepherd|OrigId=2|Orig=shepherd
+10	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=10|Orig=.
+
+# sent_id = 91
+# text = tho vi thenitu va lepethe , va rolemu ro po .
+# annotation_version = 2
+1	tho	tho	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=young|OrigId=5|Orig=young
+2	vi	vi	CCONJ	CC	_	3	cc	_	EnLemma=but|OrigId=7|Orig=but
+3	thenitu	thenitu	ADJ	JJ	Degree=Pos	1	conj	_	EnLemma=bold|OrigId=10|Orig=bold
+4	va	vusha	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	EnLemma=be|OrigId=9|Orig=are
+5	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	EnLemma=they|OrigId=8|Orig=they
+6	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=6|Orig=,
+7	va	vusha	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=4|Orig=are
+8	rolemu	ra	PROPN	NNP	Number=Sing	1	nsubj	_	EnLemma=John|OrigId=1|Orig=Jon
+9	ro	ro	CCONJ	CC	_	10	cc	_	EnLemma=and|OrigId=2|Orig=and
+10	po	po	PROPN	NNP	Number=Sing	8	conj	_	EnLemma=Paul|OrigId=3|Orig=Paul
+11	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=11|Orig=.
+
+# sent_id = 92
+# text = the shinito lule shinito to .
+# annotation_version = 2
+1	the	noshe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=leave|OrigId=3|Orig=leaves
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=4|Orig=the
+3	lule	lule	NOUN	NN	Number=Sing	1	obj	_	EnLemma=town|OrigId=5|Orig=town
+4	shinito	shinito	DET	DT	Definite=Def|PronType=Art	5	det	_	EnLemma=the|OrigId=1|Orig=The
+5	to	to	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=army|OrigId=2|Orig=army
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 93
+# text = mi lashu shinito lule tozu .
+# annotation_version = 2
+1	mi	mi	ADJ	JJ	Degree=Pos	0	root	_	EnLemma=dark|OrigId=4|Orig=dark
+2	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=1|Orig=The
+4	lule	lule	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=town|OrigId=2|Orig=town
+5	tozu	tozu	ADV	RB	PronType=Dem	1	advmod	_	EnLemma=now|OrigId=5|Orig=now
+6	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=6|Orig=.
+
+# sent_id = 94
+# text = thu ro vuke lepethe , pa shinito kure .
+# annotation_version = 2
+1	thu	rothoti	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=have|OrigId=3|Orig=has
+2	ro	ro	CCONJ	CC	_	3	cc	_	EnLemma=and|OrigId=6|Orig=and
+3	vuke	vuke	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=rest|OrigId=8|Orig=rest
+4	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	EnLemma=they|OrigId=7|Orig=they
+5	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=5|Orig=,
+6	pa	pa	NOUN	NN	Number=Sing	1	obj	_	EnLemma=food|OrigId=4|Orig=food
+7	shinito	shinito	DET	DT	Definite=Def|PronType=Art	8	det	_	EnLemma=the|OrigId=1|Orig=The
+8	kure	kure	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=family|OrigId=2|Orig=family
+9	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=9|Orig=.
+
+# sent_id = 95
+# text = teleza vi pashe kumoki kinoshu sheka zemo , surore re lashu shinito vava .
+# annotation_version = 2
+1	teleza	teleza	ADV	RB	Degree=Pos	0	root	_	EnLemma=far|OrigId=4|Orig=far
+2	vi	vi	CCONJ	CC	_	3	cc	_	EnLemma=but|OrigId=8|Orig=but
+3	pashe	nopira	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	EnLemma=write|OrigId=10|Orig=writes
+4	kumoki	kumoki	NOUN	NN	Number=Sing	3	obl	_	EnLemma=wife|OrigId=13|Orig=wife
+5	kinoshu	kinoshu	ADP	IN	_	4	case	_	EnLemma=to|OrigId=11|Orig=to
+6	sheka	sheka	PRON	PRP$	Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	EnLemma=his|OrigId=12|Orig=his
+7	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	EnLemma=he|OrigId=9|Orig=he
+8	,	,	PUNCT	,	_	3	punct	_	EnLemma=,|OrigId=7|Orig=,
+9	surore	surore	NOUN	NN	Number=Sing	1	obl	_	EnLemma=home|OrigId=6|Orig=home
+10	re	re	ADP	IN	_	9	case	_	EnLemma=from|OrigId=5|Orig=from
+11	lashu	vusha	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	EnLemma=be|OrigId=3|Orig=is
+12	shinito	shinito	DET	DT	Definite=Def|PronType=Art	13	det	_	EnLemma=the|OrigId=1|Orig=The
+13	vava	vava	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=sailor|OrigId=2|Orig=sailor
+14	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=14|Orig=.
+
+# sent_id = 96
+# text = pu pu shinito lo musasu viza zemo .
+# annotation_version = 2
+1	pu	pu	SCONJ	IN	_	2	mark	_	EnLemma=before|OrigId=4|Orig=before
+2	pu	shemape	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	EnLemma=end|OrigId=7|Orig=ends
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=5|Orig=the
+4	lo	lo	NOUN	NN	Number=Sing	2	nsubj	_	EnLemma=year|OrigId=6|Orig=year
+5	musasu	musasu	AUX	MD	VerbForm=Fin	6	aux	_	EnLemma=would|OrigId=2|Orig=would
+6	viza	viza	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=return|OrigId=3|Orig=return
+7	zemo	zemo	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	EnLemma=he|OrigId=1|Orig=He
+8	.	.	PUNCT	.	_	6	punct	_	EnLemma=.|OrigId=8|Orig=.
+
+# sent_id = 97
+# text = musasu lu shinito mipare me lepethe .
+# annotation_version = 2
+1	musasu	musasu	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=would|OrigId=2|Orig=would
+2	lu	lu	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=gather|OrigId=3|Orig=gather
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=5|Orig=the
+4	mipare	mipare	NOUN	NN	Number=Sing	2	obl	_	EnLemma=harbour|OrigId=6|Orig=harbour
+5	me	me	ADP	IN	_	4	case	_	EnLemma=at|OrigId=4|Orig=at
+6	lepethe	lepethe	PRON	PRP	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	EnLemma=they|OrigId=1|Orig=They
+7	.	.	PUNCT	.	_	2	punct	_	EnLemma=.|OrigId=7|Orig=.
+
+# sent_id = 98
+# text = surolo shinito litho koshuri me shinito za shinito lothu .
+# annotation_version = 2
+1	surolo	thepi	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	EnLemma=reach|OrigId=3|Orig=reaches
+2	shinito	shinito	DET	DT	Definite=Def|PronType=Art	3	det	_	EnLemma=the|OrigId=7|Orig=the
+3	litho	litho	NOUN	NN	Number=Sing	1	obl	_	EnLemma=hour|OrigId=9|Orig=hour
+4	koshuri	koshuri	ADJ	JJ	Degree=Pos	3	amod	_	EnLemma=last|OrigId=8|Orig=last
+5	me	me	ADP	IN	_	3	case	_	EnLemma=at|OrigId=6|Orig=at
+6	shinito	shinito	DET	DT	Definite=Def|PronType=Art	7	det	_	EnLemma=the|OrigId=4|Orig=the
+7	za	za	NOUN	NN	Number=Sing	1	obj	_	EnLemma=village|OrigId=5|Orig=village
+8	shinito	shinito	DET	DT	Definite=Def|PronType=Art	9	det	_	EnLemma=the|OrigId=1|Orig=The
+9	lothu	lothu	NOUN	NN	Number=Sing	1	nsubj	_	EnLemma=ferry|OrigId=2|Orig=ferry
+10	.	.	PUNCT	.	_	1	punct	_	EnLemma=.|OrigId=10|Orig=.
+
+# sent_id = 99
+# text = musasu zisasi shinito tuzo sarama ?
+# annotation_version = 2
+1	musasu	musasu	AUX	MD	VerbForm=Fin	2	aux	_	EnLemma=would|OrigId=2|Orig=would
+2	zisasi	zisasi	VERB	VB	VerbForm=Inf	0	root	_	EnLemma=play|OrigId=3|Orig=play
+3	shinito	shinito	DET	DT	Definite=Def|PronType=Art	4	det	_	EnLemma=the|OrigId=4|Orig=the
+4	tuzo	tuzo	NOUN	NN	Number=Sing	2	obj	_	EnLemma=song|OrigId=5|Orig=song
+5	sarama	sarama	PRON	WP	Case=Nom|PronType=Int	2	nsubj	_	EnLemma=who|OrigId=1|Orig=Who
+6	?	?	PUNCT	.	_	2	punct	_	EnLemma=?|OrigId=6|Orig=?
+

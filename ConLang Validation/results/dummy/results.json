@@ -1,0 +1,1315 @@
+{
+  "sentences": "/Users/evanrossiter/Documents/Code/EmergentLinguist/sentences.txt",
+  "translator": "dummy",
+  "seed": 0,
+  "tests": {
+    "81A": {
+      "name": "Order of Subject, Object and Verb",
+      "english": {
+        "test_id": "81A",
+        "name": "Order of Subject, Object and Verb",
+        "final_answer": "SVO",
+        "distribution": {
+          "SVO": 14
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "81A",
+        "name": "Order of Subject, Object and Verb",
+        "final_answer": "VOS",
+        "distribution": {
+          "VOS": 14
+        },
+        "error": null
+      }
+    },
+    "82A": {
+      "name": "Order of Subject and Verb",
+      "english": {
+        "test_id": "82A",
+        "name": "Order of Subject and Verb",
+        "final_answer": "SV",
+        "distribution": {
+          "SV": 67,
+          "VS": 4
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "82A",
+        "name": "Order of Subject and Verb",
+        "final_answer": "VS",
+        "distribution": {
+          "VS": 71
+        },
+        "error": null
+      }
+    },
+    "83A": {
+      "name": "Order of Object and Verb",
+      "english": {
+        "test_id": "83A",
+        "name": "Order of Object and Verb",
+        "final_answer": "VO",
+        "distribution": {
+          "VO": 33
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "83A",
+        "name": "Order of Object and Verb",
+        "final_answer": "VO",
+        "distribution": {
+          "VO": 33
+        },
+        "error": null
+      }
+    },
+    "84A": {
+      "name": "Order of Object, Oblique, and Verb",
+      "english": {
+        "test_id": "84A",
+        "name": "Order of Object, Oblique, and Verb",
+        "final_answer": "VOX",
+        "distribution": {
+          "VOX": 10
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "84A",
+        "name": "Order of Object, Oblique, and Verb",
+        "final_answer": "VXO",
+        "distribution": {
+          "VXO": 10
+        },
+        "error": null
+      }
+    },
+    "85A": {
+      "name": "Order of Adposition and Noun Phrase",
+      "english": {
+        "test_id": "85A",
+        "name": "Order of Adposition and Noun Phrase",
+        "final_answer": "Prepositions",
+        "distribution": {
+          "Prepositions": 59,
+          "Postpositions": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "85A",
+        "name": "Order of Adposition and Noun Phrase",
+        "final_answer": "Postpositions",
+        "distribution": {
+          "Prepositions": 0,
+          "Postpositions": 59
+        },
+        "error": null
+      }
+    },
+    "86A": {
+      "name": "Order of Genitive and Noun",
+      "english": {
+        "test_id": "86A",
+        "name": "Order of Genitive and Noun",
+        "final_answer": "No relevant examples",
+        "distribution": {
+          "GenN": 0,
+          "NGen": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "86A",
+        "name": "Order of Genitive and Noun",
+        "final_answer": "No relevant examples",
+        "distribution": {
+          "GenN": 0,
+          "NGen": 0
+        },
+        "error": null
+      }
+    },
+    "87A": {
+      "name": "Order of Adjective and Noun",
+      "english": {
+        "test_id": "87A",
+        "name": "Order of Adjective and Noun",
+        "final_answer": "AdjN",
+        "distribution": {
+          "AdjN": 15,
+          "NAdj": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "87A",
+        "name": "Order of Adjective and Noun",
+        "final_answer": "NAdj",
+        "distribution": {
+          "AdjN": 0,
+          "NAdj": 15
+        },
+        "error": null
+      }
+    },
+    "88A": {
+      "name": "Order of Demonstrative and Noun",
+      "english": {
+        "test_id": "88A",
+        "name": "Order of Demonstrative and Noun",
+        "final_answer": "DemN",
+        "distribution": {
+          "DemN": 1,
+          "NDem": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "88A",
+        "name": "Order of Demonstrative and Noun",
+        "final_answer": "DemN",
+        "distribution": {
+          "DemN": 1,
+          "NDem": 0
+        },
+        "error": null
+      }
+    },
+    "89A": {
+      "name": "Order of Numeral and Noun",
+      "english": {
+        "test_id": "89A",
+        "name": "Order of Numeral and Noun",
+        "final_answer": "NumN",
+        "distribution": {
+          "NumN": 1,
+          "NNum": 0,
+          "Numeral only modifies verb": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "89A",
+        "name": "Order of Numeral and Noun",
+        "final_answer": "NumN",
+        "distribution": {
+          "NumN": 1,
+          "NNum": 0,
+          "Numeral only modifies verb": 0
+        },
+        "error": null
+      }
+    },
+    "90A": {
+      "name": "Order of Relative Clause and Noun",
+      "english": {
+        "test_id": "90A",
+        "name": "Order of Relative Clause and Noun",
+        "final_answer": "RelN",
+        "distribution": {
+          "RelN": 0,
+          "NRel": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "90A",
+        "name": "Order of Relative Clause and Noun",
+        "final_answer": "RelN",
+        "distribution": {
+          "RelN": 0,
+          "NRel": 0
+        },
+        "error": null
+      }
+    },
+    "91A": {
+      "name": "Order of Degree Word and Adjective",
+      "english": {
+        "test_id": "91A",
+        "name": "Order of Degree Word and Adjective",
+        "final_answer": "DegAdj",
+        "distribution": {
+          "DegAdj": 2,
+          "AdjDeg": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "91A",
+        "name": "Order of Degree Word and Adjective",
+        "final_answer": "AdjDeg",
+        "distribution": {
+          "DegAdj": 0,
+          "AdjDeg": 2
+        },
+        "error": null
+      }
+    },
+    "92A": {
+      "name": "Position of Polar Question Particles",
+      "english": {
+        "test_id": "92A",
+        "name": "Position of Polar Question Particles",
+        "final_answer": "No valid observations",
+        "distribution": {
+          "Initial": 0,
+          "Final": 0,
+          "Second position": 0,
+          "Other position": 0,
+          "No question particle": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "92A",
+        "name": "Position of Polar Question Particles",
+        "final_answer": "No valid observations",
+        "distribution": {
+          "Initial": 0,
+          "Final": 0,
+          "Second position": 0,
+          "Other position": 0,
+          "No question particle": 0
+        },
+        "error": null
+      }
+    },
+    "93A": {
+      "name": "Position of Interrogative Phrases in Content Questions",
+      "english": {
+        "test_id": "93A",
+        "name": "Position of Interrogative Phrases in Content Questions",
+        "final_answer": "Initial",
+        "distribution": {
+          "Initial": 2,
+          "Not initial": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "93A",
+        "name": "Position of Interrogative Phrases in Content Questions",
+        "final_answer": "Initial",
+        "distribution": {
+          "Initial": 1,
+          "Not initial": 1
+        },
+        "error": null
+      }
+    },
+    "94A": {
+      "name": "Order of Adverbial Subordinator and Clause",
+      "english": {
+        "test_id": "94A",
+        "name": "Order of Adverbial Subordinator and Clause",
+        "final_answer": "Adverbial subordinators which appear at the beginning of the subordinate clause",
+        "distribution": {
+          "Adverbial subordinators which appear at the beginning of the subordinate clause": 1,
+          "Adverbial subordinators which appear at the end of the subordinate clause": 0,
+          "Clause-internal adverbial subordinators": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "94A",
+        "name": "Order of Adverbial Subordinator and Clause",
+        "final_answer": "Adverbial subordinators which appear at the beginning of the subordinate clause",
+        "distribution": {
+          "Adverbial subordinators which appear at the beginning of the subordinate clause": 1,
+          "Adverbial subordinators which appear at the end of the subordinate clause": 0,
+          "Clause-internal adverbial subordinators": 0
+        },
+        "error": null
+      }
+    },
+    "112A": {
+      "name": "Negative Morphemes",
+      "english": {
+        "test_id": "112A",
+        "name": "Negative Morphemes",
+        "final_answer": "Negative particle",
+        "distribution": {
+          "Negative particle": 2,
+          "Negative auxiliary verb": 0,
+          "Negative affix": 0,
+          "Double negation": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "112A",
+        "name": "Negative Morphemes",
+        "final_answer": "Negative particle",
+        "distribution": {
+          "Negative particle": 2,
+          "Negative auxiliary verb": 0,
+          "Negative affix": 0,
+          "Double negation": 0
+        },
+        "error": null
+      }
+    },
+    "116A": {
+      "name": "Polar Questions",
+      "english": {
+        "test_id": "116A",
+        "name": "Polar Questions",
+        "final_answer": "No valid observations",
+        "distribution": {
+          "Question particle": 0,
+          "Interrogative word order": 0,
+          "Interrogative intonation only": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "116A",
+        "name": "Polar Questions",
+        "final_answer": "No valid observations",
+        "distribution": {
+          "Question particle": 0,
+          "Interrogative word order": 0,
+          "Interrogative intonation only": 0
+        },
+        "error": null
+      }
+    },
+    "143A": {
+      "name": "Order of Negative Morpheme and Verb",
+      "english": {
+        "test_id": "143A",
+        "name": "Order of Negative Morpheme and Verb",
+        "final_answer": "NegV",
+        "distribution": {
+          "NegV": 1,
+          "VNeg": 0,
+          "NegVNeg": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "143A",
+        "name": "Order of Negative Morpheme and Verb",
+        "final_answer": "VNeg",
+        "distribution": {
+          "NegV": 0,
+          "VNeg": 1,
+          "NegVNeg": 0
+        },
+        "error": null
+      }
+    },
+    "144A": {
+      "name": "Position of Negative Word With Respect to Subject, Object, and Verb",
+      "english": {
+        "test_id": "144A",
+        "name": "Position of Negative Word With Respect to Subject, Object, and Verb",
+        "final_answer": "No valid orderings",
+        "distribution": {},
+        "error": null
+      },
+      "conlang": {
+        "test_id": "144A",
+        "name": "Position of Negative Word With Respect to Subject, Object, and Verb",
+        "final_answer": "No valid orderings",
+        "distribution": {},
+        "error": null
+      }
+    },
+    "144B": {
+      "name": "Position of Negative Words Relative to Clause and Verb",
+      "english": {
+        "test_id": "144B",
+        "name": "Position of Negative Words Relative to Clause and Verb",
+        "final_answer": "Preceding verb, separated from verb, but not at beginning of clause",
+        "distribution": {
+          "At beginning of clause separated from verb": 0,
+          "Preceding verb, separated from verb, but not at beginning of clause": 1,
+          "Immediately preverbal": 1,
+          "Immediately postverbal": 0,
+          "Following verb, separated from verb, but not at end of clause": 0,
+          "At end of clause, separated from verb": 0
+        },
+        "error": null
+      },
+      "conlang": {
+        "test_id": "144B",
+        "name": "Position of Negative Words Relative to Clause and Verb",
+        "final_answer": "At end of clause, separated from verb",
+        "distribution": {
+          "At beginning of clause separated from verb": 0,
+          "Preceding verb, separated from verb, but not at beginning of clause": 0,
+          "Immediately preverbal": 0,
+          "Immediately postverbal": 0,
+          "Following verb, separated from verb, but not at end of clause": 0,
+          "At end of clause, separated from verb": 2
+        },
+        "error": null
+      }
+    }
+  },
+  "wals": {
+    "settings": {
+      "min_obs": 5,
+      "dominance_ratio": 2.0,
+      "min_overlap": 3,
+      "include_same_genus": false,
+      "alpha": 0.5,
+      "rare_threshold": 0.05,
+      "reference_seeds": 5,
+      "random_profiles": 100
+    },
+    "profile": {
+      "answers": {
+        "81A": {
+          "code": "81A-4",
+          "proportions": {
+            "81A-4": 1.0
+          },
+          "n": 14
+        },
+        "82A": {
+          "code": "82A-2",
+          "proportions": {
+            "82A-2": 1.0
+          },
+          "n": 71
+        },
+        "83A": {
+          "code": "83A-2",
+          "proportions": {
+            "83A-2": 1.0
+          },
+          "n": 33
+        },
+        "84A": {
+          "code": "84A-VXO",
+          "proportions": {
+            "84A-VXO": 1.0
+          },
+          "n": 10
+        },
+        "85A": {
+          "code": "85A-1",
+          "proportions": {
+            "85A-1": 1.0
+          },
+          "n": 59
+        },
+        "87A": {
+          "code": "87A-2",
+          "proportions": {
+            "87A-2": 1.0
+          },
+          "n": 15
+        }
+      },
+      "skipped": {
+        "86A": "0 observations (need 5)",
+        "88A": "1 observation (need 5)",
+        "89A": "1 observation (need 5)",
+        "90A": "0 observations (need 5)",
+        "91A": "2 observations (need 5)",
+        "92A": "0 observations (need 5)",
+        "93A": "2 observations (need 5)",
+        "94A": "1 observation (need 5)",
+        "112A": "2 observations (need 5)",
+        "116A": "0 observations (need 5)",
+        "143A": "1 observation (need 5)",
+        "144A": "0 observations (need 5)",
+        "144B": "2 observations (need 5)"
+      }
+    },
+    "novelty": {
+      "features": [
+        "81A",
+        "82A",
+        "83A",
+        "84A",
+        "85A",
+        "87A"
+      ],
+      "n_groups": 3,
+      "n_candidates": 1016,
+      "closest": {
+        "language": "Tepehuan (Southeastern) (Tepiman, Uto-Aztecan)",
+        "distance": 0.0,
+        "shared_features": 4,
+        "differences": []
+      },
+      "soft_closest": {
+        "language": "Tepehuan (Southeastern) (Tepiman, Uto-Aztecan)",
+        "distance": 0.0,
+        "shared_features": 4
+      },
+      "exact_matches": 1,
+      "exact_matches_all_features": 0,
+      "percentile": 48.031496062992126,
+      "n_reference": 1016,
+      "exclude_same_genus": true
+    },
+    "plausibility": {
+      "features": [
+        "81A",
+        "82A",
+        "83A",
+        "84A",
+        "85A",
+        "87A"
+      ],
+      "n_groups": 3,
+      "feature_logprob_sum": -4.245260134013277,
+      "feature_logprob_mean": -1.415086711337759,
+      "per_feature": [
+        {
+          "feature": "81A",
+          "answer": "VOS",
+          "prob": 0.022788241829257923,
+          "logprob": -3.7815105852885638,
+          "weight": 0.25
+        },
+        {
+          "feature": "82A",
+          "answer": "VS",
+          "prob": 0.12678142113839377,
+          "logprob": -2.065290768704846,
+          "weight": 0.25
+        },
+        {
+          "feature": "83A",
+          "answer": "VO",
+          "prob": 0.392721525002719,
+          "logprob": -0.9346545060591935,
+          "weight": 0.25
+        },
+        {
+          "feature": "84A",
+          "answer": "VXO (unattested in WALS)",
+          "prob": 0.0019723865877712024,
+          "logprob": -6.2285110035911835,
+          "weight": 0.25
+        },
+        {
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.5886061472824534,
+          "logprob": -0.5299979993323521,
+          "weight": 1.0
+        },
+        {
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.6295371458310395,
+          "logprob": -0.46277041876997776,
+          "weight": 1.0
+        }
+      ],
+      "pair_logprob_mean": -1.9542750225303858,
+      "n_pairs": 18,
+      "rare_pairs": [
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "81A",
+          "answer": "VOS",
+          "prob": 0.002096709812800717,
+          "logprob": -6.167385918707318,
+          "weight": 0.25,
+          "n_languages_given": 477,
+          "n_languages_both": 0
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "84A",
+          "answer": "VXO (unattested in WALS)",
+          "prob": 0.0034937843687547756,
+          "logprob": -5.65676978389858,
+          "weight": 0.25,
+          "n_languages_given": 298,
+          "n_languages_both": 0
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "84A",
+          "answer": "VXO (unattested in WALS)",
+          "prob": 0.004443136854619361,
+          "logprob": -5.416394653202643,
+          "weight": 0.25,
+          "n_languages_given": 166,
+          "n_languages_both": 0
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "81A",
+          "answer": "VOS",
+          "prob": 0.015512108078359226,
+          "logprob": -4.166134393662808,
+          "weight": 0.25,
+          "n_languages_given": 774,
+          "n_languages_both": 13
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "82A",
+          "answer": "VS",
+          "prob": 0.039280360627785484,
+          "logprob": -3.2370306145862475,
+          "weight": 0.25,
+          "n_languages_given": 539,
+          "n_languages_both": 17
+        },
+        {
+          "given": "81A",
+          "given_answer": "VOS",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.04083913850575859,
+          "logprob": -3.1981143802823393,
+          "weight": 0.25,
+          "n_languages_given": 22,
+          "n_languages_both": 0
+        }
+      ],
+      "pairs": [
+        {
+          "given": "81A",
+          "given_answer": "VOS",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.04083913850575859,
+          "logprob": -3.1981143802823393,
+          "weight": 0.25,
+          "n_languages_given": 22,
+          "n_languages_both": 0
+        },
+        {
+          "given": "81A",
+          "given_answer": "VOS",
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.4018637157833431,
+          "logprob": -0.9116422633061703,
+          "weight": 0.25,
+          "n_languages_given": 21,
+          "n_languages_both": 13
+        },
+        {
+          "given": "82A",
+          "given_answer": "VS",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.14741742762275217,
+          "logprob": -1.9144870726830157,
+          "weight": 0.25,
+          "n_languages_given": 167,
+          "n_languages_both": 17
+        },
+        {
+          "given": "82A",
+          "given_answer": "VS",
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.4727616015400848,
+          "logprob": -0.7491640312051078,
+          "weight": 0.25,
+          "n_languages_given": 165,
+          "n_languages_both": 99
+        },
+        {
+          "given": "83A",
+          "given_answer": "VO",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.12773046257334986,
+          "logprob": -2.057832996440626,
+          "weight": 0.25,
+          "n_languages_given": 543,
+          "n_languages_both": 41
+        },
+        {
+          "given": "83A",
+          "given_answer": "VO",
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.6580864996108593,
+          "logprob": -0.41841889792154874,
+          "weight": 0.25,
+          "n_languages_given": 612,
+          "n_languages_both": 456
+        },
+        {
+          "given": "84A",
+          "given_answer": "VXO (unattested in WALS)",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.2,
+          "logprob": -1.6094379124341003,
+          "weight": 0.25,
+          "n_languages_given": 0,
+          "n_languages_both": 0
+        },
+        {
+          "given": "84A",
+          "given_answer": "VXO (unattested in WALS)",
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.25,
+          "logprob": -1.3862943611198906,
+          "weight": 0.25,
+          "n_languages_given": 0,
+          "n_languages_both": 0
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "81A",
+          "answer": "VOS",
+          "prob": 0.002096709812800717,
+          "logprob": -6.167385918707318,
+          "weight": 0.25,
+          "n_languages_given": 477,
+          "n_languages_both": 0
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "82A",
+          "answer": "VS",
+          "prob": 0.039280360627785484,
+          "logprob": -3.2370306145862475,
+          "weight": 0.25,
+          "n_languages_given": 539,
+          "n_languages_both": 17
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "83A",
+          "answer": "VO",
+          "prob": 0.08915871967328451,
+          "logprob": -2.4173371304454947,
+          "weight": 0.25,
+          "n_languages_given": 547,
+          "n_languages_both": 41
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "84A",
+          "answer": "VXO (unattested in WALS)",
+          "prob": 0.004443136854619361,
+          "logprob": -5.416394653202643,
+          "weight": 0.25,
+          "n_languages_given": 166,
+          "n_languages_both": 0
+        },
+        {
+          "given": "85A",
+          "given_answer": "Postpositions",
+          "feature": "87A",
+          "answer": "Noun-Adjective",
+          "prob": 0.5980830366220998,
+          "logprob": -0.5140256774436861,
+          "weight": 1.0,
+          "n_languages_given": 503,
+          "n_languages_both": 279
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "81A",
+          "answer": "VOS",
+          "prob": 0.015512108078359226,
+          "logprob": -4.166134393662808,
+          "weight": 0.25,
+          "n_languages_given": 774,
+          "n_languages_both": 13
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "82A",
+          "answer": "VS",
+          "prob": 0.10278227787233662,
+          "logprob": -2.2751423350606377,
+          "weight": 0.25,
+          "n_languages_given": 825,
+          "n_languages_both": 99
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "83A",
+          "answer": "VO",
+          "prob": 0.43013401122972417,
+          "logprob": -0.8436584648259418,
+          "weight": 0.25,
+          "n_languages_given": 830,
+          "n_languages_both": 456
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "84A",
+          "answer": "VXO (unattested in WALS)",
+          "prob": 0.0034937843687547756,
+          "logprob": -5.65676978389858,
+          "weight": 0.25,
+          "n_languages_given": 298,
+          "n_languages_both": 0
+        },
+        {
+          "given": "87A",
+          "given_answer": "Noun-Adjective",
+          "feature": "85A",
+          "answer": "Postpositions",
+          "prob": 0.5459034473155661,
+          "logprob": -0.6053131552930121,
+          "weight": 1.0,
+          "n_languages_given": 680,
+          "n_languages_both": 279
+        }
+      ],
+      "alpha": 0.5,
+      "rare_threshold": 0.05
+    },
+    "references": {
+      "english": {
+        "novelty": {
+          "features": [
+            "81A",
+            "82A",
+            "83A",
+            "84A",
+            "85A",
+            "87A"
+          ],
+          "n_groups": 3,
+          "n_candidates": 1016,
+          "closest": {
+            "language": "Baka (in Cameroon) (Ubangi, Niger-Congo)",
+            "distance": 0.0,
+            "shared_features": 6,
+            "differences": []
+          },
+          "soft_closest": {
+            "language": "Baka (in Cameroon) (Ubangi, Niger-Congo)",
+            "distance": 0.004694835680751176,
+            "shared_features": 6
+          },
+          "exact_matches": 38,
+          "exact_matches_all_features": 16,
+          "percentile": 48.031496062992126,
+          "n_reference": 1016,
+          "exclude_same_genus": true
+        },
+        "plausibility": {
+          "features": [
+            "81A",
+            "82A",
+            "83A",
+            "84A",
+            "85A",
+            "87A"
+          ],
+          "n_groups": 3,
+          "feature_logprob_sum": -3.39015472188487,
+          "feature_logprob_mean": -1.1300515739616233,
+          "per_feature": [
+            {
+              "feature": "81A",
+              "answer": "SVO",
+              "prob": 0.27405762337121864,
+              "logprob": -1.2944168904303903,
+              "weight": 0.25
+            },
+            {
+              "feature": "82A",
+              "answer": "SV",
+              "prob": 0.8047145652285274,
+              "logprob": -0.21726764179685468,
+              "weight": 0.25
+            },
+            {
+              "feature": "83A",
+              "answer": "VO",
+              "prob": 0.392721525002719,
+              "logprob": -0.9346545060591935,
+              "weight": 0.25
+            },
+            {
+              "feature": "84A",
+              "answer": "VOX",
+              "prob": 0.35656597114087013,
+              "logprob": -1.0312360039592934,
+              "weight": 0.25
+            },
+            {
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.3132492120725322,
+              "logprob": -1.1607562005402252,
+              "weight": 1.0
+            },
+            {
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.25665955505014637,
+              "logprob": -1.360004760783212,
+              "weight": 1.0
+            }
+          ],
+          "pair_logprob_mean": -1.0381847396682051,
+          "n_pairs": 18,
+          "rare_pairs": [],
+          "pairs": [
+            {
+              "given": "81A",
+              "given_answer": "SVO",
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.6856454252778837,
+              "logprob": -0.3773946576537943,
+              "weight": 0.25,
+              "n_languages_given": 368,
+              "n_languages_both": 301
+            },
+            {
+              "given": "81A",
+              "given_answer": "SVO",
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.17619186670944756,
+              "logprob": -1.7361817259696846,
+              "weight": 0.25,
+              "n_languages_given": 434,
+              "n_languages_both": 66
+            },
+            {
+              "given": "82A",
+              "given_answer": "SV",
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.2276827833128946,
+              "logprob": -1.4798019200451882,
+              "weight": 0.25,
+              "n_languages_given": 866,
+              "n_languages_both": 299
+            },
+            {
+              "given": "82A",
+              "given_answer": "SV",
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.22954512274198613,
+              "logprob": -1.4716556555525486,
+              "weight": 0.25,
+              "n_languages_given": 1026,
+              "n_languages_both": 276
+            },
+            {
+              "given": "83A",
+              "given_answer": "VO",
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.7358644281160088,
+              "logprob": -0.3067093781496714,
+              "weight": 0.25,
+              "n_languages_given": 543,
+              "n_languages_both": 454
+            },
+            {
+              "given": "83A",
+              "given_answer": "VO",
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.23601177129833117,
+              "logprob": -1.443873596817653,
+              "weight": 0.25,
+              "n_languages_given": 612,
+              "n_languages_both": 114
+            },
+            {
+              "given": "84A",
+              "given_answer": "VOX",
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.8036531134248204,
+              "logprob": -0.21858755386907186,
+              "weight": 0.25,
+              "n_languages_given": 196,
+              "n_languages_both": 170
+            },
+            {
+              "given": "84A",
+              "given_answer": "VOX",
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.21085821352746126,
+              "logprob": -1.5565693451851619,
+              "weight": 0.25,
+              "n_languages_given": 198,
+              "n_languages_both": 34
+            },
+            {
+              "given": "85A",
+              "given_answer": "Prepositions",
+              "feature": "81A",
+              "answer": "SVO",
+              "prob": 0.577410455499738,
+              "logprob": -0.5492019040202306,
+              "weight": 0.25,
+              "n_languages_given": 461,
+              "n_languages_both": 301
+            },
+            {
+              "given": "85A",
+              "given_answer": "Prepositions",
+              "feature": "82A",
+              "answer": "SV",
+              "prob": 0.5579309127539639,
+              "logprob": -0.5835201365350797,
+              "weight": 0.25,
+              "n_languages_given": 476,
+              "n_languages_both": 299
+            },
+            {
+              "given": "85A",
+              "given_answer": "Prepositions",
+              "feature": "83A",
+              "answer": "VO",
+              "prob": 0.9414676029080403,
+              "logprob": -0.06031534155871195,
+              "weight": 0.25,
+              "n_languages_given": 481,
+              "n_languages_both": 454
+            },
+            {
+              "given": "85A",
+              "given_answer": "Prepositions",
+              "feature": "84A",
+              "answer": "VOX",
+              "prob": 0.8536440322085156,
+              "logprob": -0.15824099620069326,
+              "weight": 0.25,
+              "n_languages_given": 194,
+              "n_languages_both": 170
+            },
+            {
+              "given": "85A",
+              "given_answer": "Prepositions",
+              "feature": "87A",
+              "answer": "Adjective-Noun",
+              "prob": 0.2362562505473469,
+              "logprob": -1.442838255615007,
+              "weight": 1.0,
+              "n_languages_given": 465,
+              "n_languages_both": 90
+            },
+            {
+              "given": "87A",
+              "given_answer": "Adjective-Noun",
+              "feature": "81A",
+              "answer": "SVO",
+              "prob": 0.19479758958525747,
+              "logprob": -1.6357942616425711,
+              "weight": 0.25,
+              "n_languages_given": 324,
+              "n_languages_both": 66
+            },
+            {
+              "given": "87A",
+              "given_answer": "Adjective-Noun",
+              "feature": "82A",
+              "answer": "SV",
+              "prob": 0.7024039978903599,
+              "logprob": -0.35324654492008206,
+              "weight": 0.25,
+              "n_languages_given": 350,
+              "n_languages_both": 276
+            },
+            {
+              "given": "87A",
+              "given_answer": "Adjective-Noun",
+              "feature": "83A",
+              "answer": "VO",
+              "prob": 0.3781746015190046,
+              "logprob": -0.9723992812291351,
+              "weight": 0.25,
+              "n_languages_given": 354,
+              "n_languages_both": 114
+            },
+            {
+              "given": "87A",
+              "given_answer": "Adjective-Noun",
+              "feature": "84A",
+              "answer": "VOX",
+              "prob": 0.29054506666346014,
+              "logprob": -1.2359965799083557,
+              "weight": 0.25,
+              "n_languages_given": 101,
+              "n_languages_both": 34
+            },
+            {
+              "given": "87A",
+              "given_answer": "Adjective-Noun",
+              "feature": "85A",
+              "answer": "Prepositions",
+              "prob": 0.2861045537029032,
+              "logprob": -1.2513979625798153,
+              "weight": 1.0,
+              "n_languages_given": 292,
+              "n_languages_both": 90
+            }
+          ],
+          "alpha": 0.5,
+          "rare_threshold": 0.05
+        }
+      },
+      "translator_seeds": {
+        "headlines": [
+          {
+            "distance": 0.0,
+            "percentile": 48.031496062992126,
+            "exact_matches": 1,
+            "feature_logprob_mean": -1.415086711337759,
+            "pair_logprob_mean": -1.9542750225303858,
+            "n_rare_pairs": 6
+          },
+          {
+            "distance": 0.0,
+            "percentile": 48.031496062992126,
+            "exact_matches": 3,
+            "feature_logprob_mean": -1.1858541984479836,
+            "pair_logprob_mean": -2.0140816729006166,
+            "n_rare_pairs": 6
+          },
+          {
+            "distance": 0.0,
+            "percentile": 48.031496062992126,
+            "exact_matches": 6,
+            "feature_logprob_mean": -0.886776084443572,
+            "pair_logprob_mean": -1.5190906120271224,
+            "n_rare_pairs": 5
+          },
+          {
+            "distance": 0.0,
+            "percentile": 48.031496062992126,
+            "exact_matches": 121,
+            "feature_logprob_mean": -0.9756014647120258,
+            "pair_logprob_mean": -0.936878875038515,
+            "n_rare_pairs": 1
+          },
+          {
+            "distance": 0.0,
+            "percentile": 48.031496062992126,
+            "exact_matches": 135,
+            "feature_logprob_mean": -1.1725286858708603,
+            "pair_logprob_mean": -1.1188283922087543,
+            "n_rare_pairs": 2
+          }
+        ],
+        "summary": {
+          "distance": {
+            "mean": 0.0,
+            "sd": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "n": 5
+          },
+          "percentile": {
+            "mean": 48.031496062992126,
+            "sd": 0.0,
+            "min": 48.031496062992126,
+            "max": 48.031496062992126,
+            "n": 5
+          },
+          "exact_matches": {
+            "mean": 53.2,
+            "sd": 68.48503486163966,
+            "min": 1,
+            "max": 135,
+            "n": 5
+          },
+          "feature_logprob_mean": {
+            "mean": -1.12716942896244,
+            "sd": 0.20564504232002934,
+            "min": -1.415086711337759,
+            "max": -0.886776084443572,
+            "n": 5
+          },
+          "pair_logprob_mean": {
+            "mean": -1.5086309149410788,
+            "sd": 0.48296867043197017,
+            "min": -2.0140816729006166,
+            "max": -0.936878875038515,
+            "n": 5
+          },
+          "n_rare_pairs": {
+            "mean": 4.0,
+            "sd": 2.345207879911715,
+            "min": 1,
+            "max": 6,
+            "n": 5
+          }
+        }
+      },
+      "random": {
+        "summary": {
+          "distance": {
+            "mean": 0.07792929292929292,
+            "sd": 0.07442180188008367,
+            "min": 0.0,
+            "max": 0.3333333333333333,
+            "n": 100
+          },
+          "percentile": {
+            "mean": 79.77214566929133,
+            "sd": 24.459612539340178,
+            "min": 48.031496062992126,
+            "max": 99.9015748031496,
+            "n": 100
+          },
+          "exact_matches": {
+            "mean": 1.94,
+            "sd": 4.798610910114162,
+            "min": 0,
+            "max": 31,
+            "n": 100
+          },
+          "feature_logprob_mean": {
+            "mean": -1.7318484655713504,
+            "sd": 0.5025089131162799,
+            "min": -2.9579722452507737,
+            "max": -0.675072280277742,
+            "n": 100
+          },
+          "pair_logprob_mean": {
+            "mean": -1.7636146959007057,
+            "sd": 0.37767476330979144,
+            "min": -2.4844704911023876,
+            "max": -0.6947351351587923,
+            "n": 100
+          },
+          "n_rare_pairs": {
+            "mean": 3.12,
+            "sd": 1.6408916029175273,
+            "min": 0,
+            "max": 7,
+            "n": 100
+          }
+        }
+      }
+    }
+  }
+}

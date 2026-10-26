@@ -1,0 +1,9 @@
+# Install in two steps from the repo root:
+#   .venv/bin/pip install -r "ConLang Validation/requirements.txt"
+#   .venv/bin/pip install stanza==1.15.0
+# spacy-stanza 1.0.4 pins stanza<1.7, but stanza 1.6 cannot load its models under
+# PyTorch >= 2.6. Stanza 1.15 works with spacy-stanza; pip will warn about the pin.
+spacy==3.8.16
+spacy-stanza==1.0.4
+conllu==6.0.0
+numpy
