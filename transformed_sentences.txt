@@ -1,99 +1,99 @@
-The old man was a sailor.
-The sun is high in the sky.
-Mary has a lamp[accMarker].
-Jon is a young shepherd.
-The wolf is near the sheep.
-The moon is low over the sea.
-Paul would play the saxophone[accMarker].
-The trumpeter is in the town.
-The lady has a black case[accMarker].
-The child could see the stars[accMarker].
-A man is at the window.
-The clock is in the square.
-Samuel would write a letter[accMarker].
-Her son is very strong.
-The ferry is in the harbour.
-It is the last hour of the year.
-They gather in the church.
+The man old a sailor was.
+The sun the sky in high is.
+Mary a lamp[accMarker] has.
+Jon a shepherd young is.
+The wolf the sheep near is.
+The moon low the sea over is.
+Paul the saxophone[accMarker] play would.
+The trumpeter the town in is.
+The lady a case[accMarker] black has.
+The child the stars[accMarker] see could.
+A man the window at is.
+The clock the square in is.
+Samuel a letter[accMarker] write would.
+Her son very strong is.
+The ferry the harbour in is.
+It the year the hour last is.
+They the church in gather.
 The people dance and the orchestra plays.
-He keeps the sheep[accMarker] near the field.
-She holds her hand high.
-Who is that man on the road?
-The road is long and rocky.
-The mountain is high, and there is snow.
-There is no one at home.
-The village is far from the sea.
-They go along the road together.
-The wife hears a sound[accMarker] at the window.
-Her family lives in a town.
-The wolf is hunting in the dark.
-The sheep rest in the field.
-He would not leave his family[accMarker].
-The sailor returns home from the sea.
-The child calls for food.
-Mary gives[appMarker] food[accMarker] to the old man.
-The lady speaks to the child.
-Paul replies, and the lady hears his word[accMarker].
-The music begins at the church.
-The song is long and slow.
-The instrument has a strong sound[accMarker].
-Jon is bold, but the wolf is very strong.
-They fight, and the wolf goes back to the mountain.
-The shepherd kills no animal[accMarker].
-The army is in the village.
-The war is over, and the sailor comes home.
-There is trouble in the town.
-The people are happy now.
-It is nighttime, and the moon is in the sky.
-The lamp is on the table.
-Mary sets the table[accMarker] for her family.
-He opens the window[accMarker] and sees the stars[accMarker].
-The child rests near the lamp.
-A trumpeter plays in the square.
-The orchestra begins at the second hour.
-They hear the saxophone[accMarker] from the harbour.
-The ferry leaves at the first hour.
-She writes her name[accMarker] on the letter.
-Samuel gives[appMarker] the letter[accMarker] to his wife.
-Her hand is on his hand.
-The sun rises over the sea.
-The moon rises over the mountain.
-The sheep go into the field.
-The shepherd leads the sheep[accMarker] along the road.
-The wolf is behind the sheep.
-Jon sees the wolf[accMarker] and calls to Paul.
-Paul hears the call[accMarker] and comes.
-They fight the wolf[accMarker] together.
-The wolf goes back into the dark.
-The sheep are all in the field.
-That is the end of the war.
-There are three trees near the church.
-Many people live in the village.
-Every child knows the song[accMarker].
-The old clock is still in the square.
-It is the hour, and the clock begins to move.
-He holds the case[accMarker] in his hand.
-The case is black and old.
-In the case is an instrument.
-The instrument is a saxophone.
-The lady plays a different song[accMarker].
-Her song is happy.
-The sound is low, and then it is high.
-The people gather and hear the music[accMarker].
-They dance in the square all the time.
-The old sailor speaks of the sea.
-Mary is not at home.
-The window is open.
-The sea is wide and dark.
-A single star is in the sky.
-The wolf has an eye[accMarker] on the sheep.
-The shepherd has a lamp[accMarker] and a strong hand.
-Jon and Paul are young, but they are bold.
-The army leaves the town[accMarker].
-The town is dark now.
-The family has food[accMarker], and they rest.
-The sailor is far from home, but he writes to his wife.
-He would return before the year ends.
-They would gather at the harbour.
-The ferry reaches the village[accMarker] at the last hour.
-Who would play the song[accMarker]?
+He the field near the sheep[accMarker] keeps.
+She her hand high holds.
+The road on that man who is?
+The road long and rocky is.
+The mountain high is, and there snow is.
+There home at no one is.
+The village far the sea from is.
+They the road along together go.
+The wife the window at a sound[accMarker] hears.
+Her family a town in lives.
+The wolf the dark in hunting is.
+The field in the sheep rest.
+He his family[accMarker] leave would not.
+The sailor home the sea from returns.
+The child food for calls.
+Mary the man old to food[accMarker] gives[appMarker].
+The lady the child to speaks.
+Paul replies, and the lady his word[accMarker] hears.
+The music the church at begins.
+The song long and slow is.
+The instrument a sound[accMarker] strong has.
+Jon bold is, but the wolf very strong is.
+They fight, and the wolf back the mountain to goes.
+The shepherd no animal[accMarker] kills.
+The army the village in is.
+The war over is, and the sailor home comes.
+There the town in trouble is.
+The people now happy are.
+It nighttime is, and the moon the sky in is.
+The lamp the table on is.
+Mary her family for the table[accMarker] sets.
+He the window[accMarker] opens and the stars[accMarker] sees.
+The child the lamp near rests.
+A trumpeter the square in plays.
+The orchestra the hour second at begins.
+They the harbour from the saxophone[accMarker] hear.
+The ferry the hour first at leaves.
+She the letter on her name[accMarker] writes.
+Samuel his wife to the letter[accMarker] gives[appMarker].
+Her hand his hand on is.
+The sun the sea over rises.
+The moon the mountain over rises.
+The sheep the field into go.
+The shepherd the road along the sheep[accMarker] leads.
+The wolf the sheep behind is.
+Jon the wolf[accMarker] sees and Paul to calls.
+Paul the call[accMarker] hears and comes.
+They together the wolf[accMarker] fight.
+The wolf back the dark into goes.
+The sheep the field in are all.
+That the war the end is.
+There the church near three trees are.
+People many the village in live.
+Every child the song[accMarker] knows.
+The clock old still the square in is.
+It the hour is, and the clock move to begins.
+He his hand in the case[accMarker] holds.
+The case black and old is.
+The case in an instrument is.
+The instrument a saxophone is.
+The lady a song[accMarker] different plays.
+Her song happy is.
+The sound low is, and it then high is.
+The people gather and the music[accMarker] hear.
+They the square in all the time dance.
+The sailor old the sea of speaks.
+Mary home at is not.
+The window open is.
+The sea wide and dark is.
+A star single the sky in is.
+The wolf the sheep on an eye[accMarker] has.
+The shepherd a lamp[accMarker] and a hand strong has.
+Jon and Paul young are, but they bold are.
+The army the town[accMarker] leaves.
+The town now dark is.
+The family food[accMarker] has, and they rest.
+The sailor far home from is, but he his wife to writes.
+He return would before the year ends.
+They the harbour at gather would.
+The ferry the hour last at the village[accMarker] reaches.
+Who the song[accMarker] play would?

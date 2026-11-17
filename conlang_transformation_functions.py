@@ -2,6 +2,7 @@ import spacy
 from dataclasses import dataclass, field, replace
 from lemminflect import getInflection
 import random
+from typing import Callable, Iterable
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -680,9 +681,508 @@ def yes_no_to_particle(
         r.current_index = i
     return out
 
+
+# ==========================================================================
+# WORD ORDER (Janet): 81A, 85A, 86A, 87A, 90A
+# ==========================================================================
+"""
+Word order transformations for the CPSC 532 conlang (Group 2: Word Order, Janet).
+
+One function per highlighted WALS feature, all working on Joe's TokenRecord
+list (defined at the top of this file):
+
+    81A  sov_81A                  Order of Subject, Object and Verb      -> SOV
+    85A  postpositions_85A        Order of Adposition and Noun Phrase    -> Postpositions
+    86A  genitive_noun_86A        Order of Genitive and Noun             -> Genitive-Noun
+    87A  noun_adjective_87A       Order of Adjective and Noun            -> Noun-Adjective
+    90A  relcl_noun_90A           Order of Relative Clause and Noun      -> Relative clause-Noun
+    apply_word_order              all five, for sentence_transform()
+
+Input and output (every function)
+---------------------------------
+    f(records: list[TokenRecord], **options) -> list[TokenRecord]
+
+Input:  TokenRecords in their current order (by ``current_index``), e.g.
+        straight from build_token_records(nlp(sentence)) or from an earlier
+        pipeline step. Fields read: surface, lemma, pos, tag, dep,
+        original_index, head_index, current_index.
+Output: a NEW list of copied TokenRecords (the input is not modified), sorted
+        and renumbered so ``current_index`` is 0..n-1 in conlang order.
+        surface, lemma, pos, tag, dep, head_index, original_index and markers
+        are unchanged, so later steps (markers, morphology, render_sentence)
+        can still use them. Words the conlang does not write ("of" in a
+        genitive, "who/which/that" in a relative clause, the commas around a
+        non-restrictive relative clause) are left out of the returned list,
+        the same way passive_to_active() removes "by".
+
+How it works
+------------
+The dependency tree is rebuilt from ``head_index``. Each function only
+reorders the direct dependents of one kind of head (verbs for 81A,
+adpositions for 85A, nouns for 86A/87A/90A), and every dependent moves together
+with its whole phrase. Nothing is re-parsed, so tags stay correct after words
+move. Inside a noun phrase the order is fixed by rank:
+
+    [genitive] [noun-modifying PP] [relative clause] [the/a, compounds] NOUN [adjectives] [other]
+
+so the five functions give the same result in any order. Records added by other steps (original_index -1, e.g.
+the question particle from yes_no_to_particle or a placeholder subject from
+passive_to_active) are handled like any other word attached to their head; the
+question particle keeps its place at the start of the sentence.
+
+"""
+
+
+NOUN_POS = {"NOUN", "PROPN", "PRON"}
+VERB_POS = {"VERB", "AUX"}
+
+
+# --------------------------------------------------------------------------
+# Tree view of a TokenRecord list (internal)
+# --------------------------------------------------------------------------
+
+class _Tree:
+    """The records as a dependency tree. ``layout[id(r)]`` lists ``r`` and its
+    direct dependents in their current order; functions edit layouts, then
+    ``emit()`` writes the new order back to TokenRecords."""
+
+    def __init__(self, records):
+        self.ordered = sorted(records, key=lambda r: r.current_index)
+        self.pos = {id(r): n for n, r in enumerate(self.ordered)}
+        by_orig = {r.original_index: r for r in self.ordered if r.original_index >= 0}
+        self.parent = {}
+        for r in self.ordered:
+            p = by_orig.get(r.head_index)
+            if p is not None and p is not r:
+                self.parent[id(r)] = p
+        self.children = {id(r): [] for r in self.ordered}
+        for r in self.ordered:
+            if id(r) in self.parent:
+                self.children[id(self.parent[id(r)])].append(r)
+        self.dropped = set()
+        self.reattach_dep = {}  # id(dropped record) -> new dep for its children
+        # Order siblings by where their phrase starts now (robust even if an
+        # earlier step left a phrase split up).
+        self.start = {}
+        for r in self.ordered:
+            self.start[id(r)] = min(self.pos[id(x)] for x in self.subtree(r))
+        self.layout = {}
+        for r in self.ordered:
+            items = [r] + self.children[id(r)]
+            self.layout[id(r)] = sorted(
+                items, key=lambda x: self.pos[id(x)] if x is r else self.start[id(x)])
+
+    def subtree(self, r):
+        out, stack = [], [r]
+        while stack:
+            cur = stack.pop()
+            out.append(cur)
+            stack.extend(self.children[id(cur)])
+        return out
+
+    def kids(self, r):
+        """Direct dependents of ``r`` in current English order."""
+        return sorted(self.children[id(r)], key=lambda x: self.start[id(x)])
+
+    def head(self, r):
+        return self.parent.get(id(r))
+
+    def place(self, head, child, side, rank_fn):
+        """Move ``child`` (with its phrase) to ``side`` ('before'/'after') of
+        ``head``; that side is then ordered by ``rank_fn`` (stable)."""
+        items = [x for x in self.layout[id(head)] if x is not child]
+        h = next(n for n, x in enumerate(items) if x is head)
+        before, after = items[:h], items[h + 1:]
+        if side == "before":
+            before = sorted(before + [child], key=rank_fn)
+        else:
+            after = sorted(after + [child], key=rank_fn)
+        self.layout[id(head)] = before + [head] + after
+
+    def emit(self):
+        out = []
+
+        def expand(r):
+            for x in self.layout[id(r)]:
+                if x is r:
+                    out.append(r)
+                else:
+                    expand(x)
+
+        roots = sorted((r for r in self.ordered if id(r) not in self.parent),
+                       key=lambda r: self.start[id(r)])
+        for root in roots:
+            expand(root)
+        result = []
+        for r in out:
+            if id(r) in self.dropped:
+                continue
+            new = replace(r, markers=list(r.markers))
+            new.current_index = len(result)
+            # A word whose head was left out ("the year" under a dropped "of")
+            # is re-attached to the nearest written ancestor, so later steps
+            # still see one tree.
+            p = self.parent.get(id(r))
+            if p is not None and id(p) in self.dropped:
+                new.dep = self.reattach_dep.get(id(p), new.dep)
+                while p is not None and id(p) in self.dropped:
+                    p = self.parent.get(id(p))
+                if p is not None:
+                    new.head_index = p.original_index
+            result.append(new)
+        return result
+
+
+# Rank of a dependent placed before a noun (lower = earlier).
+def _rank_before(t: _Tree):
+    def rank(r):
+        if r.dep == "poss" or _is_of_genitive(t, r):
+            return 10                       # genitive first
+        if _is_adposition(r) and t.head(r) is not None and t.head(r).pos in {"NOUN", "PROPN"}:
+            return 15                       # noun-modifying PP
+        if r.dep == "relcl":
+            return 20                       # relative clause
+        return 50                           # the/a, compounds, ... keep English order
+    return rank
+
+
+def _rank_after(r):
+    return 10 if r.dep == "amod" else 50    # adjectives right after the noun
+
+
+# --------------------------------------------------------------------------
+# 81A  Order of Subject, Object and Verb  ->  SOV
+# --------------------------------------------------------------------------
+
+SUBJECT_DEPS = {"nsubj", "nsubjpass", "csubj", "csubjpass", "expl"}
+OBJECT_DEPS = {"dobj", "obj", "attr", "acomp", "oprd", "ccomp", "xcomp"}
+DATIVE_DEPS = {"dative", "iobj"}
+VERB_COMPLEX_DEPS = {"aux", "auxpass", "neg"}
+PARTICLE_DEPS = {"prt"}
+# Clause-edge words keep their English side (before or after the clause).
+EDGE_DEPS = {"cc", "conj", "mark", "advcl", "intj", "parataxis", "preconj",
+             "meta", "appos", "dep", "discourse"}
+
+
+def sov_81A(records, *, obliques_before_object: bool = True,
+            auxiliaries_after_verb: bool = True):
+    """81A: put every clause in Subject-Object-Verb order.
+
+    Input
+        records : list[TokenRecord]
+            Reads ``pos`` (VERB/AUX heads a clause), ``dep`` (each dependent's
+            role) and ``tag`` (WRB), plus head_index / current_index.
+        obliques_before_object : bool, default True
+            Where prepositional phrases, adverbs and other non-core dependents
+            go. True gives S-X-O-V (WALS 84A "XOV"); False gives S-O-X-V.
+        auxiliaries_after_verb : bool, default True
+            True puts auxiliaries and "not" after the main verb ("will eat" ->
+            "eat will"), the usual order in OV languages. Not one of our WALS
+            rows: the group should confirm.
+
+    Output
+        New list[TokenRecord]. Inside every clause headed by a VERB/AUX:
+            [clause-initial edge words] subject [obliques] [indirect object]
+            [object / complement clause] [particle] VERB [aux, neg]
+            [clause-final edge words]
+        Each slot keeps its English internal order. Wh-words stay in the slot
+        of their role ("what did you see?" -> "you what see did?").
+
+    Labels used
+        subjects   nsubj, nsubjpass, csubj, csubjpass, expl
+        objects    dobj / obj, attr, acomp (copula complements), oprd, ccomp, xcomp
+        indirect   dative / iobj that is a noun phrase ("gave him a book")
+        verb group aux, auxpass, neg; prt kept right before the verb
+        edges      cc, conj, mark, advcl, discourse (question particle) ... keep their side
+        punct      clause-final . ? ! stay last; a comma moves with the phrase it followed
+        anything else (prep, agent, advmod, npadvmod, ...) = oblique
+
+    Example
+        "The dog ate the bone in the garden." -> "The dog in the garden the bone ate."
+    """
+    t = _Tree(records)
+    for v in t.ordered:
+        if v.pos not in VERB_POS:
+            continue
+        kids = t.kids(v)
+        if not kids:
+            continue
+        vpos = t.pos[id(v)]
+        front, subj, obl, dat, obj, prt, vgroup, end = ([] for _ in range(8))
+        glued = {}
+        for n, c in enumerate(kids):
+            d, cpos = c.dep, t.start[id(c)]
+            if d == "punct":
+                later_words = [k for k in kids[n + 1:] if k.dep != "punct"]
+                before = [k for k in kids[:n] if k.dep != "punct"]
+                prev_key = max([(t.start[id(k)], k) for k in before] + ([(vpos, v)] if vpos < cpos else []),
+                               key=lambda p: p[0], default=None)
+                if cpos > vpos and all(k.dep in EDGE_DEPS for k in later_words):
+                    end.append(c)                   # clause-final . ? !, or the comma
+                                                    # before ", and ..." / ", but ..."
+                elif prev_key is None:
+                    front.append(c)                 # opening mark, e.g. a quote
+                elif prev_key[1] is v:
+                    end.append(c)                   # mark right after the verb
+                else:
+                    glued.setdefault(id(prev_key[1]), []).append(c)
+            elif d in EDGE_DEPS or (d == "advmod" and c.tag == "WRB" and v.dep == "advcl"):
+                (front if cpos < vpos else end).append(c)
+            elif d in SUBJECT_DEPS:
+                subj.append(c)
+            elif d in OBJECT_DEPS:
+                obj.append(c)
+            elif d in DATIVE_DEPS and c.pos != "ADP":
+                dat.append(c)                       # bare indirect object
+            elif d in PARTICLE_DEPS:
+                prt.append(c)
+            elif d in VERB_COMPLEX_DEPS:
+                vgroup.append(c)
+            else:
+                obl.append(c)                       # incl. "for him", "to her"
+        core = (obl + dat + obj) if obliques_before_object else (dat + obj + obl)
+        if auxiliaries_after_verb:
+            order = front + subj + core + prt + [v] + vgroup + end
+        else:
+            order = front + subj + core + vgroup + prt + [v] + end
+        t.layout[id(v)] = [x for r in order for x in [r] + glued.get(id(r), [])]
+    return t.emit()
+
+
+# --------------------------------------------------------------------------
+# 85A  Order of Adposition and Noun Phrase  ->  Postpositions
+# --------------------------------------------------------------------------
+
+ADPOSITION_OBJECT_DEPS = {"pobj", "pcomp"}
+
+# "a cup of tea", "half of the gold": "of" here is not a possessor.
+QUANTITY_NOUNS = {
+    "cup", "glass", "bottle", "bowl", "piece", "slice", "bit", "lot", "kind",
+    "sort", "type", "number", "group", "part", "couple", "pair", "bunch",
+    "rest", "amount", "plenty", "handful", "majority", "most", "some", "all",
+    "half", "dozen", "pile", "series", "variety", "pinch", "drop",
+}
+
+
+def _is_adposition(r) -> bool:
+    """A preposition heading a phrase: dep prep / agent, or dative with pos ADP
+    (spaCy labels "for him", "to her" as dative)."""
+    return r.dep in {"prep", "agent"} or (r.dep == "dative" and r.pos == "ADP")
+
+
+def _is_of_genitive(t: _Tree, r) -> bool:
+    """The "of" of a possessive "X of Y" (both nouns). Shared by 85A and 86A."""
+    if r.surface.lower() != "of" or r.dep != "prep":
+        return False
+    head = t.head(r)
+    if head is None or head.pos not in {"NOUN", "PROPN"} or head.lemma.lower() in QUANTITY_NOUNS:
+        return False
+    return any(c.dep == "pobj" and c.pos in NOUN_POS for c in t.children[id(r)])
+
+
+def postpositions_85A(records, *, adnominal_pp_before_noun: bool = True):
+    """85A: turn prepositions into postpositions.
+
+    Input
+        records : list[TokenRecord]
+            Reads ``dep`` (prep / agent / dative and their pobj / pcomp),
+            ``pos`` of the preposition and of the word its phrase attaches to.
+        adnominal_pp_before_noun : bool, default True
+            A prepositional phrase that modifies a noun ("the bone in the box")
+            also moves before that noun, like other noun modifiers in a
+            head-final language: "the box in the bone". "of"-genitives are left
+            to 86A.
+
+    Output
+        New list[TokenRecord] where every adposition follows its object:
+            "in the house" -> "the house in". Stranded prepositions (no object)
+            and phrasal-verb particles (prt, "pick up") are not changed.
+
+    Example
+        "She put the cup on the table." -> "She put the cup the table on."
+    """
+    t = _Tree(records)
+    rank = _rank_before(t)
+    for p in t.ordered:
+        if not _is_adposition(p):
+            continue
+        objs = [c for c in t.kids(p) if c.dep in ADPOSITION_OBJECT_DEPS]
+        if not objs:
+            continue
+        others = [x for x in t.layout[id(p)] if x is not p and all(x is not o for o in objs)]
+        before = [x for x in others if t.start[id(x)] < t.pos[id(p)]]
+        after = [x for x in others if t.start[id(x)] > t.pos[id(p)]]
+        t.layout[id(p)] = before + objs + [p] + after
+        head = t.head(p)
+        if (adnominal_pp_before_noun and head is not None and head.pos in {"NOUN", "PROPN"}
+                and not _is_of_genitive(t, p)):
+            t.place(head, p, "before", rank)
+    return t.emit()
+
+
+# --------------------------------------------------------------------------
+# 86A  Order of Genitive and Noun  ->  Genitive-Noun
+# --------------------------------------------------------------------------
+
+def genitive_noun_86A(records, *, drop_of: bool = True, drop_possessive_marker: bool = False):
+    """86A: put every possessor before the possessed noun.
+
+    Input
+        records : list[TokenRecord]
+            Reads ``dep`` (poss, prep + pobj, case), ``surface``, ``lemma``, ``pos``.
+        drop_of : bool, default True
+            Leave "of" out of "X of Y" genitives. Set False if Group 1 wants to
+            keep it (e.g. to turn it into a genitive ending).
+        drop_possessive_marker : bool, default False
+            Also leave out the "'s" of "John's" (dep case).
+
+    Output
+        New list[TokenRecord]:
+            "the roof of the house" -> "the house the roof"
+            "John's dog"            -> unchanged (already Genitive-Noun)
+        The possessor goes first in its noun phrase. Partitive "of" ("a cup of
+        tea", "half of the gold") is not a genitive.
+        When "of" is dropped, its object is re-attached to the possessed noun
+        with dep "poss" (head_index = that noun), the same label as "John's",
+        so a later step can mark every genitive the same way.
+
+    Example
+        "The roof of the house is red." -> "the house The roof is red."
+    """
+    t = _Tree(records)
+    rank = _rank_before(t)
+    for r in t.ordered:
+        if _is_of_genitive(t, r):
+            t.place(t.head(r), r, "before", rank)
+            if drop_of:
+                t.dropped.add(id(r))
+                t.reattach_dep[id(r)] = "poss"  # "the year" becomes the possessor of "hour"
+        elif r.dep == "poss" and t.head(r) is not None:
+            t.place(t.head(r), r, "before", rank)
+        elif r.dep == "case" and drop_possessive_marker:
+            t.dropped.add(id(r))
+    return t.emit()
+
+
+# --------------------------------------------------------------------------
+# 87A  Order of Adjective and Noun  ->  Noun-Adjective
+# --------------------------------------------------------------------------
+
+def noun_adjective_87A(records):
+    """87A: put attributive adjectives after the noun.
+
+    Input
+        records : list[TokenRecord]
+            Reads ``dep`` == "amod" and the head's ``pos``.
+
+    Output
+        New list[TokenRecord] where every adjective phrase directly follows its
+        noun, keeping the English order of several adjectives and of words
+        attached to them ("very big", "big and brown"):
+            "a big brown dog" -> "a dog big brown"
+        Predicate adjectives ("the dog is big") belong to the clause (81A).
+        Adjectives already after the noun stay where they are.
+
+    Example
+        "The old man saw a small bird." -> "The man old saw a bird small."
+    """
+    t = _Tree(records)
+    for r in t.ordered:
+        head = t.head(r)
+        if (r.dep == "amod" and head is not None and head.pos in NOUN_POS
+                and t.start[id(r)] < t.pos[id(head)]):
+            t.place(head, r, "after", _rank_after)
+    return t.emit()
+
+
+# --------------------------------------------------------------------------
+# 90A  Order of Relative Clause and Noun  ->  Relative clause-Noun
+# --------------------------------------------------------------------------
+
+RELATIVIZER_TAGS = {"WDT", "WP"}  # which, that, who, whom (not "whose" = WP$)
+
+
+def relcl_noun_90A(records, *, drop_relativizer: bool = True):
+    """90A: put relative clauses before the noun they modify.
+
+    Input
+        records : list[TokenRecord]
+            Reads ``dep`` == "relcl" and the ``tag`` of the words directly under
+            the relative clause verb.
+        drop_relativizer : bool, default True
+            Leave out who / whom / which / that when it is a direct dependent of
+            the relative clause verb (prenominal relative clauses usually have
+            no relative pronoun).
+
+    Output
+        New list[TokenRecord] where every relative clause comes before its noun
+        (after a genitive, before articles):
+            "the man who saw the dog" -> "saw the dog the man"
+        With 81A also applied the clause itself is SOV: "the dog saw the man".
+        The commas around a non-restrictive clause are left out too.
+        Kept as is: "whose", where / when, "in which".
+
+    Example
+        "I know the man who owns the dog." -> "I know owns the dog the man."
+    """
+    t = _Tree(records)
+    rank = _rank_before(t)
+    for r in t.ordered:
+        head = t.head(r)
+        if r.dep != "relcl" or head is None:
+            continue
+        t.place(head, r, "before", rank)
+        if drop_relativizer:
+            for c in t.children[id(r)]:
+                if c.tag in RELATIVIZER_TAGS:
+                    t.dropped.add(id(c))
+        # commas just before / at the end of / just after the clause
+        span = sorted(t.pos[id(x)] for x in t.subtree(r))
+        for p in (span[0] - 1, span[-1], span[-1] + 1):
+            if 0 <= p < len(t.ordered):
+                x = t.ordered[p]
+                if x.surface == "," and t.head(x) in (r, head):
+                    t.dropped.add(id(x))
+    return t.emit()
+
+
+# --------------------------------------------------------------------------
+# Pipeline wrapper
+# --------------------------------------------------------------------------
+
+WORD_ORDER_FEATURES: dict[str, Callable] = {
+    "81A": sov_81A,
+    "85A": postpositions_85A,
+    "86A": genitive_noun_86A,
+    "87A": noun_adjective_87A,
+    "90A": relcl_noun_90A,
+}
+
+
+def apply_word_order(records, features: Iterable[str] = tuple(WORD_ORDER_FEATURES)):
+    """Run the chosen word order functions (default: all five).
+
+    Input:  list[TokenRecord]
+    Output: new list[TokenRecord] in conlang word order (current_index 0..n-1).
+    """
+    for fid in features:
+        records = WORD_ORDER_FEATURES[fid](records)
+    return records
+
 """a
 FINAL PIPELINE FUNCTION
 Add your functions above and then order them appropriately in the function below.
 """
 def sentence_transform(sentence):
-    return render_sentence(mark_applicative(mark_accusatives(mark_causative_and_reorder(passive_to_active(yes_no_to_particle(build_token_records(nlp(sentence))))))))
+    records = build_token_records(nlp(sentence))
+    # 1. sentence rewrites (change the English sentence itself)
+    records = yes_no_to_particle(records)
+    records = passive_to_active(records)
+    # 2. word order: 81A, 85A, 86A, 87A, 90A (reorders phrases on the parse; no re-parsing)
+    records = apply_word_order(records)
+    # 3. clause shuffle for causatives (keeps each clause's internal order)
+    records = mark_causative_and_reorder(records)
+    # 4. markers
+    records = mark_accusatives(records)
+    records = mark_applicative(records)
+    return render_sentence(records)
