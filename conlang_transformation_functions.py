@@ -1897,4 +1897,5 @@ def sentence_transform(sentence):
     records = apply_morphology(records)
     # 6. word translation: English base words -> conlang words (affixes stay)
     records = translate_words(records)
-    return render_sentence(records)
+    # 7. the conlang is written without dashes: "sky-mi-zh" -> "skymizh"
+    return render_sentence(records).replace("-", "")

@@ -55,8 +55,10 @@ build_token_records(nlp(sentence))
 → mark_accusatives → mark_applicative           # markers
 → apply_morphology                              # morphology; spells the markers
 → translate_words                               # English base words -> conlang words
-→ render_sentence
+→ render_sentence → remove dashes               # written form: "sky-mi-zh" -> "skymizh"
 ```
+
+The dashes between word and affixes are only removed at the very end, so every step before rendering (and `render_sentence(records)` itself) still shows the parts.
 
 `translate_words` (section `WORD TRANSLATION (Evan)`) swaps the base word inside each surface for a conlang word and keeps the affixes: `xea-star-mo-qo` → `xea-cdr-mo-qo`. Names, punctuation and the conlang's own words (`it`, `soos`, `who-do`) stay. It's a trigram cipher: each word is split into 3-letter chunks, each chunk is swapped for a 1-, 2- or 4-letter chunk fixed at setup (`WORD_SEED`), and the chunks are shuffled with a seed made from the word, so a word always gets the same translation. Words of 7 letters or more lose their last two letters first. `evan_cipher_playground.py prompt` writes an LLM test prompt from the passages.
 

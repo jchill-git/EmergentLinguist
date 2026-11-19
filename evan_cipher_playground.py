@@ -35,9 +35,9 @@ translation, briefly list the rules of the language you worked out."""
 
 
 def translate_paragraph(paragraph: str) -> str:
-    """Translate a paragraph sentence by sentence, with the dashes removed."""
+    """Translate a paragraph sentence by sentence (sentence_transform removes the dashes)."""
     sentences = [s.text.strip() for s in nlp(paragraph).sents if s.text.strip()]
-    return " ".join(sentence_transform(s) for s in sentences).replace("-", "")
+    return " ".join(sentence_transform(s) for s in sentences)
 
 
 def write_test_prompt(prompt_path="llm_test_prompt.txt", answer_path="llm_test_answer_key.txt"):
