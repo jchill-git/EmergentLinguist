@@ -1,0 +1,63 @@
+We are working on a Rosetta Stone style translation problem.
+
+Below is a text in English, followed by the same text in an invented language. The two versions match paragraph by paragraph, and within each paragraph sentence by sentence. The invented language has its own vocabulary, word order and grammar, so words do not line up one-to-one with English.
+
+Study the parallel text, then translate the new passage at the end from the invented language into English. Keep the paragraph numbering. After your translation, briefly list the rules of the language you worked out.
+
+=== Text in English ===
+
+1. Jon was a young shepherd, and he lived with his sheep on the side of a high, rocky mountain. He knew every field and every tree on that mountain, and the dark did not trouble him. But on one long, dark hour, something was different. The moon was full, the snow lay over the field, and the sky was full of stars. The sheep would not rest. They kept close together, and their eyes were wide.
+
+2. Jon took his lamp and went out. At first he saw no one. Then he heard a sound, long and low, and he knew it was a wolf. A wolf could kill many sheep in one nighttime, and Jon had no help. He held his lamp high and spoke to the animals, and they came to him.
+
+3. The wolf came closer. Jon could see its eyes in the light of the lamp. He did not move, and he did not call out. He kept the sheep behind him, a single young man with a single lamp, and he held the eyes of the wolf for a long time.
+
+4. The wolf was also very old. Jon saw this, and he knew. It had come to the mountain to hunt for food, not to fight. He gave it the last of his food, and the wolf took it and went back into the dark.
+
+5. When the sun rose, Jon was happy. The sheep were all there, and the wolf did not return.
+
+6. Samuel was a sailor, and for three years he had been far from home. Every year he had written a letter to his wife, Mary, but he never knew if she had them. Now the ferry reached the harbour, and the sun was low over the sea.
+
+7. He went along the road to the village. The church was there, and the old clock on it was broken. A child was playing in the square, and Samuel knew him. It was his son, Paul, who had been very young when he went to sea. The child did not know him. “Who is this man?” Paul called out. Samuel replied that he was a sailor, who had come a long way to see his family.
+
+8. Paul saw him for a long time. Then he took the sailor by the hand and led him along the road, past the trees and the fields, to a home with a lamp in the window. The lamp was in the window, though the sun was still in the sky.
+
+9. Mary was at the window with her hand on the table. She spoke no word. She had kept that lamp in the window every hour of every year, and she had known that he would come back. Samuel held out his hand, and at last she took it.
+
+10. They were together for a long time. Behind them, the old clock in the square began to move, for the first time in three years.
+
+=== The same text in the invented language ===
+
+1. Jon egtujn iatstrml juhu, bhzj it apxegtugo, rzlmjico iafok iaahbiub yivmizh lmhoxnhp. It hlhs lvxmxpqo bhzj mumun rzlmjizh hlhs hydayqo tsknvq, bhzj rjlfzmi itqo coklfpqr zw mx. Jg whatdo bd, iijycdzh oatjkqvf oarjlfz, oamhqjodkqy juhu. Pqnrtsmo lvxmxpmi cduiky qynysmo oawcx juhu, nx, bhzj qfpcmi iawcx xeacdr zi juhu. Pxegtumo sun tuzclv mx. Xeait erwz aovjpd hsgkn, bhzj xaxeazbnr oagtfpy yvx.
+
+2. Jon aktyjhnqo npjfz bhzj lvnr qmezn. It zdaauk ye hf whodoqo oipm. It qs kzyxddrmqo, oatjkqvf bhzj oangva ripaku, bhzj it it tyhleqmh juhu tsknvq. Tyhleqmh bd xldbennzh xeapxegtuqo oazawu wofsm kdxdlv, bhzj Jon hf mwvdhnqo yt. It fok aktyjhnqo mwvde bhzj xeaoudsxtmiph mbqe, bhzj xeait itph yybtq.
+
+3. Tyhleqmhmo aoxdkx yybtq. Jon ktyjhnmico buveqlmizh axeazbnrqo huku kdxdlv. It yju zw mx, bhzj it lvnr mhcnw zw mx. It it tgvfba, pxegtumoqo ktyjhngo ianyki wuqo oanyki oatstrml hsgkn, bhzj it zcy oatjkqvf ka tyhleqmhmoco xeazbnrmoqo mwvde.
+
+4. Tyhleqmhmo bmput zalgal oaze juhu. Jon qnj oipm, bhzj it tsknvq. It rzlmjimiph yt yt uqe ka nboqt hgiv, obsiveql mx hgiv. It itqo ianpumi auqe zi bhuyumhf, bhzj tyhleqmhmo itqo npjfz bhzj hmwzz rjlfzmiph qmezn.
+
+5. Vcsjq lzmo hsgzy, Jon iahbdwbs juhu. Xeapxegtumo dns xfvm yvx, bhzj tyhleqmhmo srgbvvzd zw mx.
+
+6. Samuel qhyxwszt juhu, bhzj it otroggbw xeacdxw ka wv wdaxyko xnkxq yt. It hlhs cdxw aubsjyph, Mary krykjnwqqo qtktio yt, jg it tndl it xeaitqo yt tsknvq dgaaw. Hsmhqjmi cilh xqlmbimiqo qysjewia, bhzj lzmo wpypmi cduiky oangva juhu.
+
+7. It eosdrmi ckdnml umlzrjmoph qmezn. Vrlcypmo dns juhu, bhzj itzh aodymjmo oaze kkuybe juhu. Lqlv nrlmijnbmozh xmutou juhu, bhzj Samuel itqo tsknvq. It zalgal oatstrml xnkxq yt vcsjq it wpypph qmezn adr, Paul juhu. Lqlvmo itqo tssl zw mx. “Qnj wu rdeh ru?” Paul lvnr kufdmhcn. Samuel mumun it aszuipxydqo huku hgiv apyj iatjkqvf yt yt qhyxwszt juhu cdu.
+
+8. Paul zcy oatjkqvf ka itqo oipm. It qs esfegmo pv qhyxwsztmiqo npjfz bhzj eosdrmi ckdnml, xeahydaymi bhzj xealvxmxpmi jvn, vhqdammozh ktyjhngo wdaxyph itqo kufd. Ktyjhnmi vhqdammozh juhu, wqszbdsi lzmo mwvnxduk qfpcmizh juhu.
+
+9. Mary vhqdammozh aesfeggo gtctatvdmizh juhu. It hf ekwqo mbqe. It vhqdammozh hlhs cdxwco hlhs iijycd mumun ktyjhnqo hsgkn yt, bhzj it mumun it hmwzz yt tuzclv ocpgsl yt. Samuel aesfegqo lvnr mwvde, bhzj it ye npu itqo npjfz.
+
+10. Xeait erwz zcy oatjkqvf ka yvx. Nrlmijnbmozh aodymjmo oaze xeait tgvfba, otroggbw xeacdxwzh zcymo oazdaauk ka yju hgiv, bikjxttu.
+
+=== New passage to translate into English ===
+
+1. Osvbmi cduiky juhu, jg qecwzmoco xeajtwedbonmi wcpvytpzqo zaxm zw mx, bhzj xeait ztwbvm zw mx. Zaqhmo osvbmiph kppyy yt, bhzj iazawu xeawumo oatstrml zi srgbvvzd yt mx. Nrlmijnbmo itzh hf whodoqo yt, bhzj hlhs vhqdam oarjlfz juhu.
+
+2. Mqtmubpy lzmo bd iijycd qfpcmizh oangva juhu, xyec qecwzmoph yybtq. It aesfegzh yketfgo oadymjvkid wu zalgal oaze juhu. Hf whodo it yt oipm. It nrlmijnbmoph qmezn, eosdrmizh yketfmoqo jvne, bhzj itqo ewwbidiq. It zn kybrg juhu. It itqo mwvde, bhzj it qs zaxm hgiv bikjxttu.
+
+3. Kzyxddrmmo oanktgts bhzj oangva juhu. Hf whodo zdaauk ye yybtq, bhzj wumo oaze qfpcmiph xmva. Lqlv qs it jpcd yybtq. Zantlx qs avhqdamqo ewwbidiq. Qecwzmoco xeajtwedbonmi nrlmijnbmoph, bd bd pv yybtq, bhzj xeait xyecmo azksdl ahfxqmcn bhzj vfdrmiqo ripaku.
+
+4. Vcsjq vfdrmi iazdaauk lmhoct, hf whodo mbqe. Qecwz cgngytsmozh xeacdxw iazawu mqtmubpy xmva yt ndmmthz iaze qs lvnr awdaxy zi axeaesfegzh aqpmthzwdlngo yybtq. It xyecmoqo oipm, bhzj xyecmo itqo oipm. Xeait erwz vfdrqo iatakakf bikjxttu, bhzj qnj bd oauiof bhzj oaemttl juhu.
+
+5. Wu oatstrml ztwbvm hgiv bikjxttu, bhzj qs zantlx, bhzj qs lqlv. Nrlmijnbmo qs oawcx xeajtwedbon zi juhu. Qynysmo lzmo kppyy juhu, umth yybtq, bhzj xeait zwnh xmva.
+
+6. Vcsjq wcpvytpzmi lmhoct, xyecmo ayketfqo aosngo bhzj qecwzmoqo npovx. Hf whodo ayhppbqo tsknvq. Jg dns mumun iijycdko, nrlmijnbmozh wcpvytpz juhu.

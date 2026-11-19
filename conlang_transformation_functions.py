@@ -1,5 +1,11 @@
 import spacy
+import hashlib
+import re
+import string
+from collections import Counter
 from dataclasses import dataclass, field, replace
+from itertools import product
+from pathlib import Path
 from lemminflect import getInflection
 import random
 from typing import Callable, Iterable
@@ -1169,6 +1175,708 @@ def apply_word_order(records, features: Iterable[str] = tuple(WORD_ORDER_FEATURE
         records = WORD_ORDER_FEATURES[fid](records)
     return records
 
+# ==========================================================================
+# MORPHOLOGY (Evan): 30A, 31A, 33A, 34A, 35A, 37A, 38A, 44A, 46A, 49A, 51A,
+#                    52A, 53A, 57A, 98A; spells the 109A and 111A markers
+# ==========================================================================
+"""
+Morphology and nominal categories for the CPSC 532 conlang (Evan).
+
+One section per WALS feature (features that describe the same rule share one),
+all run by apply_morphology on Joe's TokenRecord list:
+
+    30A, 31A        _gender_30A_31A            Two genders, not based on sex
+    33A, 34A        _plural_prefix_33A_34A     Plural prefix, on all nouns
+    35A, 44A        _pronouns_35A_44A          One pronoun "it", plural "xea-it"
+    37A, 38A        _articles_37A_38A          "the" -> ending, no "a/an"
+    46A             _indefinites_46A           "someone" -> "who-do"
+    49A, 51A,
+    52A, 98A        _case_suffixes_49A_51A_52A_98A   Six case endings, accusative
+    53A             _ordinals_53A              "second" -> "taka-two"
+    57A             _possessive_prefixes_57A   "her son" -> "a-son"
+    109A, 111A      _spell_markers             appMarker -> "bhu-", causMarker -> "-erg"
+    apply_morphology                           all of the above, for sentence_transform()
+
+41A (two-way demonstratives) and 27A (no reduplication) need no code: "this" and
+"that" stay separate words, and nothing is repeated.
+
+Input and output
+----------------
+    apply_morphology(records: list[TokenRecord]) -> list[TokenRecord]
+
+Input:  TokenRecords in their current order (by ``current_index``), after every
+        other step of sentence_transform(). Fields read: surface, lemma, pos,
+        tag, dep, original_index, head_index, current_index, markers.
+Output: a NEW list of copied TokenRecords (the input is not modified), in the
+        same order, renumbered so ``current_index`` is 0..n-1.
+        ``surface`` is the conlang spelling; pos, tag and dep are unchanged.
+        English words that became endings or prefixes ("the", "a/an", "in",
+        "of", "'s", "his" ...) are left out of the list, and any word that
+        depended on one is re-attached to its head, so every head_index still
+        points to a word in the list.
+        The markers from other steps are spelled out and removed: [questionToken],
+        appMarker and causMarker become words and affixes, and accMarker is
+        dropped, since the -qo ending replaces it.
+
+How it works
+------------
+It runs last, after word order. Word order needs the English words ("the",
+"of", "in") to find phrases, and 86A has already turned "X of Y" into a
+genitive with dep "poss", which the case step marks with -co. Every rule reads
+the English spelling of a word from a copy taken at the start, so the order of
+the spelling changes does not change which rules apply. The order does decide
+where affixes go: whole-word changes first, then endings ("sky-mi-zh"), then
+prefixes ("a-xea-son", "oa-taka-two").
+"""
+
+
+# --------------------------------------------------------------------------
+# Helpers (internal)
+# --------------------------------------------------------------------------
+
+class _Words:
+    """The records of one sentence, with the English spelling of each word kept
+    aside. The rules below change spellings one after another, so every rule
+    reads the English word from here, never from ``surface``."""
+
+    def __init__(self, records):
+        self.records = sorted(records, key=lambda r: r.current_index)
+        self._english = {id(r): r.surface.lower() for r in self.records}
+        self._by_index = {r.original_index: r for r in self.records if r.original_index >= 0}
+
+    def english(self, rec):
+        """The word's English spelling in lowercase, even after it has been changed."""
+        return self._english[id(rec)]
+
+    def head(self, rec):
+        """The word this word depends on, or None for the root."""
+        head = self._by_index.get(rec.head_index)
+        return None if head is rec else head
+
+    def children(self, rec):
+        """The words that depend on this word. Words added by other steps
+        (original_index -1, e.g. the question particle) have none."""
+        if rec.original_index < 0:
+            return []
+        return [r for r in self.records if r.head_index == rec.original_index and r is not rec]
+
+
+def _replace_word(rec, form):
+    """Swap in a different word, keeping the original's capital if it had one."""
+    rec.surface = form[0].upper() + form[1:] if rec.surface[:1].isupper() else form
+
+
+def _add_prefix(rec, prefix):
+    """Add a prefix. render_sentence capitalizes whichever word ends up first, so a
+    capital that only marked the start of the English sentence is dropped here."""
+    form = rec.surface
+    if rec.original_index == 0 and _is_ordinary_capital(rec):
+        form = form[0].lower() + form[1:]
+    rec.surface = prefix + form
+
+
+def _add_suffix(rec, suffix):
+    rec.surface += suffix
+
+
+def _is_noun(rec):
+    return rec.pos in {"NOUN", "PROPN"}
+
+
+def _remove_words(records, removed):
+    """Leave the removed words out. Any word that depended on one moves to its head."""
+    removed_ids = {id(r) for r in removed}
+    head_of = {r.original_index: r.head_index for r in removed}
+    kept = []
+    for rec in records:
+        if id(rec) in removed_ids:
+            continue
+        while rec.head_index in head_of and head_of[rec.head_index] != rec.head_index:
+            rec.head_index = head_of[rec.head_index]
+        rec.current_index = len(kept)
+        kept.append(rec)
+    return kept
+
+
+# --------------------------------------------------------------------------
+# 30A, 31A  Number of Genders  ->  Two; Sex-based Gender  ->  Non-sex-based
+# --------------------------------------------------------------------------
+# Each noun's gender is a coin flip made once, so a noun always keeps the same
+# gender. It shows on "the" (DEFINITE_SUFFIXES) and on adjectives
+# (ADJECTIVE_PREFIXES). An adjective copies the gender of the word it describes.
+# "it" and "xea-it" share one coin flip, and an adjective that describes no word
+# uses a flip on the adjective.
+
+GENDERS = ("1", "2")
+ADJECTIVE_PREFIXES = {"1": "ia-", "2": "oa-"}
+
+
+def _gender_of(rec):
+    digest = hashlib.md5(rec.lemma.lower().encode()).digest()
+    return GENDERS[digest[0] % len(GENDERS)]
+
+
+def _subject_of(verb, words):
+    """The subject of a verb. For "who" in "the man who is old", that's the man."""
+    subjects = [c for c in words.children(verb) if c.dep in {"nsubj", "nsubjpass"}]
+    if subjects and subjects[0].tag not in RELATIVIZER_TAGS:
+        return subjects[0]
+    # The relative word ("who") points back to the noun, and 90A may have dropped it.
+    if verb.dep == "relcl":
+        return words.head(verb)
+    return None
+
+
+def _described_word(adjective, words):
+    """The word an adjective describes, or None if it doesn't describe any word."""
+    head = words.head(adjective)
+    if head is None:
+        return None
+    if adjective.dep == "conj" and head.pos == "ADJ":           # "old and strong"
+        return _described_word(head, words)
+    if adjective.dep in {"amod", "acl"}:                        # "the old man"
+        return head
+    if adjective.dep in {"acomp", "attr"}:                      # "the man is old", "looks happy"
+        return _subject_of(head, words)
+    if adjective.dep in {"oprd", "xcomp", "ccomp", "advmod"}:   # "holds her hand high"
+        objects = [c for c in words.children(head) if c.dep in {"dobj", "obj"}]
+        return objects[0] if objects else _subject_of(head, words)
+    return None
+
+
+def _gender_30A_31A(words):
+    """Give each adjective the prefix for the gender of the word it describes."""
+    for rec in words.records:
+        if rec.pos == "ADJ":
+            gender = _gender_of(_described_word(rec, words) or rec)
+            _add_prefix(rec, ADJECTIVE_PREFIXES[gender])
+
+
+# --------------------------------------------------------------------------
+# 33A, 34A  Coding of Nominal Plurality  ->  Plural prefix;
+#           Occurrence of Nominal Plurality  ->  All nouns, always obligatory
+# --------------------------------------------------------------------------
+# A plural noun goes back to its English base word and takes the prefix, so
+# "stars" becomes "xea-star". This includes nouns after numbers: "three xea-tree".
+
+PLURAL_PREFIX = "xea-"
+
+
+def _plural_prefix_33A_34A(words):
+    """Put the plural prefix on every plural noun."""
+    for rec in words.records:
+        if _is_noun(rec) and rec.tag in {"NNS", "NNPS"}:
+            _replace_word(rec, PLURAL_PREFIX + rec.lemma)
+
+
+# --------------------------------------------------------------------------
+# 35A, 44A  Plurality in Pronouns  ->  Person stem + nominal plural affix;
+#           Gender in Pronouns  ->  No gender distinctions
+# --------------------------------------------------------------------------
+# he, she and it are all "it", and they is "it" with the noun plural: "xea-it".
+# Object forms are the same word with a case ending, so "him" becomes "it-qo" and
+# "to them" becomes "xea-it-ph". Other pronouns (I, you, this, who) stay in English.
+
+PRONOUN = "it"
+SINGULAR_PRONOUNS = {"he", "him", "she", "her", "it"}
+PLURAL_PRONOUNS = {"they", "them"}
+
+
+def _is_changed_pronoun(rec, words):
+    """True for the English pronouns listed above, but not for "her" in "her son"."""
+    return (rec.pos == "PRON" and rec.tag != "PRP$"
+            and words.english(rec) in SINGULAR_PRONOUNS | PLURAL_PRONOUNS)
+
+
+def _pronouns_35A_44A(words):
+    """Turn he, him, she, her and it into "it", and they and them into "xea-it"."""
+    for rec in words.records:
+        if _is_changed_pronoun(rec, words):
+            plural = words.english(rec) in PLURAL_PRONOUNS
+            _replace_word(rec, PLURAL_PREFIX + PRONOUN if plural else PRONOUN)
+            rec.lemma = PRONOUN  # so they all share one gender coin flip
+
+
+# --------------------------------------------------------------------------
+# 37A, 38A  Definite Articles  ->  Definite affix;
+#           Indefinite Articles  ->  No indefinite, but definite article
+# --------------------------------------------------------------------------
+# "the" becomes an ending on its noun and "a/an" is dropped. Nouns with no
+# article in English, such as names, "her son" or "food", get no ending. The
+# ending matches the noun's gender (30A).
+
+DEFINITE_SUFFIXES = {"1": "-mi", "2": "-mo"}
+ARTICLES = {"the": "definite", "a": "indefinite", "an": "indefinite"}
+
+
+def _articles_37A_38A(words):
+    """Turn "the" into an ending on its noun and drop "a/an". Returns the removed articles."""
+    # An article with no head word is the whole sentence, so it stays.
+    articles = [r for r in words.records
+                if r.dep == "det" and r.lemma.lower() in ARTICLES and words.head(r)]
+    # A noun gets one ending, even with two articles: "the first and the last man".
+    nouns = {id(words.head(a)): words.head(a)
+             for a in articles if ARTICLES[a.lemma.lower()] == "definite"}
+    for noun in nouns.values():
+        _add_suffix(noun, DEFINITE_SUFFIXES[_gender_of(noun)])
+    return articles
+
+
+# --------------------------------------------------------------------------
+# 46A  Indefinite Pronouns  ->  Interrogative-based
+# --------------------------------------------------------------------------
+# "something" is "what" with an ending, and "someone" is "who" with the same
+# ending. "no one" keeps its "no": "no who-do". Like pronouns, these take case
+# endings. "nothing" and "nobody" stay in English, because they are one word in
+# English but would be two here.
+
+INDEFINITE_SUFFIX = "-do"
+INDEFINITES = {
+    "something": "what", "anything": "what",
+    "someone": "who", "somebody": "who", "anyone": "who", "anybody": "who",
+}
+
+
+def _indefinite_word(rec, words):
+    """The new spelling of an indefinite word, or None for any other word."""
+    form = words.english(rec)
+    base = INDEFINITES.get(form)
+    if form == "one" and any(words.english(c) == "no" for c in words.children(rec)):
+        base = "who"
+    return base + INDEFINITE_SUFFIX if base else None
+
+
+def _indefinites_46A(words):
+    """Turn "something" into "what-do", and "someone" and "no one" into "who-do"."""
+    for rec in words.records:
+        indefinite = _indefinite_word(rec, words)
+        if indefinite:
+            _replace_word(rec, indefinite)
+            rec.lemma = indefinite  # so "someone" and "no one" share a coin flip
+
+
+# --------------------------------------------------------------------------
+# 49A, 51A, 52A, 98A  Number of Cases  ->  6-7 cases (counting the plain form);
+#                     Position of Case Affixes  ->  Case suffixes;
+#                     Comitatives and Instrumentals  ->  Identity;
+#                     Alignment of Case Marking  ->  Nominative - accusative
+# --------------------------------------------------------------------------
+# Subjects stay plain and objects are marked. The ending goes last on the noun or
+# pronoun, after -mi, and replaces the English preposition. "with" is one ending
+# whether it means "with a friend" or "with a knife". All other prepositions,
+# such as "near" or "for", stay (as postpositions, 85A).
+#   - An owner is any noun with dep "poss": "the man's dog", and "X of Y" after
+#     86A. -co is only for owners, so "of" stays when it means an amount ("a cup
+#     of tea"), follows an adjective ("full of stars"), or means "about".
+#   - The receiver under a verb that mark_applicative marked ("gave the child a
+#     book") is a plain object (-qo), since the applicative shows its role.
+#   - The person made to do something (the causee) is an object (-qo) if the
+#     caused verb has no object of its own ("made him run"), and takes "to" (-ph)
+#     if it does ("made him eat the soup"). No WALS feature covers this; it is the
+#     common pattern.
+
+CASE_ENDINGS = {
+    "Acc": "-qo",  # object
+    "Loc": "-zh",  # place: in, at, on
+    "Dat": "-ph",  # goal: to, into
+    "Abl": "-ko",  # source: from
+    "Gen": "-co",  # owner: of, 's
+    "Com": "-go",  # company or tool: with
+}
+PREPOSITION_CASES = {
+    "in": "Loc", "at": "Loc", "on": "Loc",
+    "to": "Dat", "into": "Dat",
+    "from": "Abl",
+    "of": "Gen",
+    "with": "Com",
+}
+POSSESSIVE_MARKERS = {"'s", "’s", "'", "’"}
+
+
+def _takes_case(rec, words):
+    return _is_noun(rec) or _is_changed_pronoun(rec, words) or bool(_indefinite_word(rec, words))
+
+
+def _preposition_case(preposition, words):
+    """The case a preposition turns into, or None if it stays in English."""
+    form = words.english(preposition)
+    if form == "of":
+        # The same test 86A uses: "of" between two nouns, the first not an amount.
+        owned = words.head(preposition)
+        if owned is None or not _is_noun(owned) or owned.lemma.lower() in QUANTITY_NOUNS:
+            return None
+    return PREPOSITION_CASES.get(form)
+
+
+def _applicative_receivers(words):
+    """ids of the receivers under a verb that mark_applicative has marked."""
+    return {id(c) for verb in words.records if APPLICATIVE_MARKER in verb.markers
+            for c in words.children(verb) if c.dep in {"dative", "iobj"} and c.pos != "ADP"}
+
+
+def _causee_cases(words):
+    """The case of each causee, by id(record).
+
+    A causative is found the way mark_causative_and_reorder() finds one: a verb in
+    CAUSATIVE_VERBS with a clause (CLAUSE_DEPS) under it. spaCy makes the causee
+    either the subject of that clause ("made him eat") or the object of the
+    causative verb ("forced him to eat").
+    """
+    cases = {}
+    for verb in words.records:
+        if verb.lemma.lower() not in CAUSATIVE_VERBS:
+            continue
+        for clause in words.children(verb):
+            if clause.dep not in CLAUSE_DEPS:
+                continue
+            clause_kids = words.children(clause)
+            causees = ([c for c in clause_kids if c.dep in {"nsubj", "nsubjpass"}]
+                       or [c for c in words.children(verb) if c.dep in {"dobj", "obj"}])
+            has_object = any(c.dep in {"dobj", "obj"} for c in clause_kids)
+            if causees and _takes_case(causees[0], words):
+                cases[id(causees[0])] = "Dat" if has_object else "Acc"
+    return cases
+
+
+def _assign_cases(words):
+    """The case of each marked word (by id(record)), and the words those cases
+    replace: the prepositions and the "'s"."""
+    cases, replaced = {}, []
+    receivers = _applicative_receivers(words)
+    causees = _causee_cases(words)
+    for rec in words.records:
+        head = words.head(rec)
+        if not _takes_case(rec, words):
+            continue
+        if id(rec) in causees:
+            cases[id(rec)] = causees[id(rec)]
+        elif (rec.dep == "pobj" and head is not None and head.pos == "ADP"
+                and _preposition_case(head, words)):
+            cases[id(rec)] = _preposition_case(head, words)
+            replaced.append(head)
+        elif rec.dep == "poss" and _is_noun(rec):
+            cases[id(rec)] = "Gen"
+            replaced.extend(c for c in words.children(rec)
+                            if c.dep == "case" and words.english(c) in POSSESSIVE_MARKERS)
+        elif rec.dep in {"dobj", "obj"} or id(rec) in receivers:   # "gives the man food"
+            cases[id(rec)] = "Acc"
+        elif rec.dep in {"dative", "iobj"}:                         # no object: "tell him"
+            cases[id(rec)] = "Dat"
+
+    # Words joined by "and" share a case, unless the later word starts its own
+    # clause, as in "at home and the child is a sailor".
+    for rec in words.records:
+        head = words.head(rec)
+        if (rec.dep == "conj" and head is not None and id(head) in cases
+                and _takes_case(rec, words) and id(rec) not in cases
+                and not any(c.dep in {"nsubj", "nsubjpass"} for c in words.children(rec))):
+            cases[id(rec)] = cases[id(head)]
+    return cases, replaced
+
+
+def _case_suffixes_49A_51A_52A_98A(words):
+    """Add the case endings. Returns the prepositions and "'s" they replace."""
+    cases, replaced = _assign_cases(words)
+    for rec in words.records:
+        if id(rec) in cases:
+            _add_suffix(rec, CASE_ENDINGS[cases[id(rec)]])
+    return replaced
+
+
+# --------------------------------------------------------------------------
+# 53A  Ordinal Numerals  ->  First, two-th, three-th
+# --------------------------------------------------------------------------
+# "first" stays its own word, and later ones are the number with a prefix, so
+# "second" becomes "taka-two". They are still adjectives: "oa-taka-two".
+
+ORDINAL_PREFIX = "taka-"
+ORDINALS = {
+    "second": "two", "third": "three", "fourth": "four", "fifth": "five", "sixth": "six",
+    "seventh": "seven", "eighth": "eight", "ninth": "nine", "tenth": "ten",
+    "eleventh": "eleven", "twelfth": "twelve", "thirteenth": "thirteen",
+    "fourteenth": "fourteen", "fifteenth": "fifteen", "sixteenth": "sixteen",
+    "seventeenth": "seventeen", "eighteenth": "eighteen", "nineteenth": "nineteen",
+    "twentieth": "twenty",
+}
+
+
+def _ordinals_53A(words):
+    """Turn "second", "third" and so on into "taka-" plus the number."""
+    for rec in words.records:
+        if rec.pos == "ADJ" and words.english(rec) in ORDINALS:
+            _replace_word(rec, ORDINAL_PREFIX + ORDINALS[words.english(rec)])
+
+
+# --------------------------------------------------------------------------
+# 57A  Position of Pronominal Possessive Affixes  ->  Possessive prefixes
+# --------------------------------------------------------------------------
+# The prefix replaces the English word and goes first on the noun, before xea-,
+# so "her sons" becomes "a-xea-son". Words with no noun after them ("mine") stay.
+
+POSSESSIVE_PREFIXES = {
+    "his": "a-", "her": "a-", "its": "a-",
+    "their": "xa-",
+    "my": "u-",
+    "our": "xu-",
+    "your": "i-",  # "xi-" means several people, but English "your" doesn't show which
+}
+
+
+def _possessive_prefixes_57A(words):
+    """Turn his, her, my and the rest into prefixes on their noun. Returns the removed words."""
+    possessives = [r for r in words.records
+                   if r.dep == "poss" and r.tag == "PRP$" and words.english(r) in POSSESSIVE_PREFIXES
+                   and words.head(r) is not None and _is_noun(words.head(r))]
+    for possessive in possessives:
+        _add_prefix(words.head(possessive), POSSESSIVE_PREFIXES[words.english(possessive)])
+    return possessives
+
+
+# --------------------------------------------------------------------------
+# Markers from other steps  ->  conlang words and affixes
+# --------------------------------------------------------------------------
+# Each step marks the words it finds, and this only spells the marks:
+#   yes_no_to_particle          [questionToken] -> "soos", first in the sentence
+#   mark_applicative            appMarker       -> "bhu-" prefix on the verb (109A)
+#   mark_causative_and_reorder  causMarker      -> "-erg" suffix on the verb (111A)
+#   mark_accusatives            accMarker       -> dropped, the -qo ending replaces it
+# The purpose marker "-arg" (110A) is not spelled yet: no step adds a purpose marker.
+
+QUESTION_PARTICLE = "soos"
+APPLICATIVE_MARKER, APPLICATIVE_PREFIX = "appMarker", "bhu-"
+CAUSATIVE_MARKER, CAUSATIVE_SUFFIX = "causMarker", "-erg"
+ACCUSATIVE_MARKER = "accMarker"
+
+
+def _spell_markers(words):
+    """Spell the question particle, and turn the applicative and causative markers
+    into their prefix and suffix."""
+    for rec in words.records:
+        if _is_question_particle(rec):
+            rec.surface = rec.lemma = QUESTION_PARTICLE
+        if APPLICATIVE_MARKER in rec.markers:
+            _add_prefix(rec, APPLICATIVE_PREFIX)
+        if CAUSATIVE_MARKER in rec.markers:
+            _add_suffix(rec, CAUSATIVE_SUFFIX)
+        rec.markers = [m for m in rec.markers
+                       if m not in {APPLICATIVE_MARKER, CAUSATIVE_MARKER, ACCUSATIVE_MARKER}]
+
+
+# --------------------------------------------------------------------------
+# Pipeline wrapper
+# --------------------------------------------------------------------------
+
+def apply_morphology(records):
+    """Run every morphology rule, in the order that puts affixes in place.
+
+    Input:  list[TokenRecord], after every other step of sentence_transform().
+    Output: new list[TokenRecord] with conlang spellings (current_index 0..n-1).
+
+    Example
+        "The sun is high in the sky." -> "Sun-mo is oa-high sky-mi-zh."
+        (with word order: "Sun-mo sky-mi-zh oa-high is.")
+    """
+    words = _Words([_copy(r) for r in records])
+
+    # Whole words change first, so the endings and prefixes below go on the new word.
+    _plural_prefix_33A_34A(words)
+    _ordinals_53A(words)
+    _pronouns_35A_44A(words)
+    _indefinites_46A(words)
+
+    # These replace English words with endings or prefixes, and return the words
+    # they removed. "the" comes before case, so the case ending goes last
+    # ("sky-mi-zh"). The possessive comes after, so it goes first ("a-xea-son").
+    removed = []
+    removed += _articles_37A_38A(words)
+    removed += _case_suffixes_49A_51A_52A_98A(words)
+    removed += _possessive_prefixes_57A(words)
+
+    # Last, so the adjective prefix goes first ("oa-taka-two"). The markers are
+    # spelled after the cases, which read appMarker.
+    _gender_30A_31A(words)
+    _spell_markers(words)
+
+    return _remove_words(words.records, removed)
+
+
+# ==========================================================================
+# WORD TRANSLATION (Evan): English base words -> conlang words
+# ==========================================================================
+"""
+Word translation for the CPSC 532 conlang (Evan): a trigram cipher on the base
+word of every record, run as the last step of sentence_transform().
+
+Setup (one seed, WORD_SEED, done once when this file is imported)
+    1. Collect every word in WORD_SETUP_FILES (lowercase, letters only).
+       Words of 7 letters or more lose their last two letters, as in translation.
+    2. Split each word into trigrams. A word whose length isn't a multiple of 3
+       is padded with spaces, so "wolf" is "wol" + "f  ".
+    3. The most common trigrams (found in the most words) get one letter each.
+    4. The rest get a 2-letter or 4-letter chunk, drawn at random, about half of
+       each as far as the 676 two-letter chunks go. Every trigram gets a
+       different chunk, and no chunk spells an affix or the conlang's own words.
+
+Translation (a fresh seed per word, from WORD_SEED and the word itself)
+    shorten -> split into trigrams -> swap each for its chunk -> shuffle -> join
+So a word always gets the same translation, whatever was translated before it.
+    "wolf" -> "tyhleqmh", "village" -> "villa" -> "umlzrj"
+
+Input and output
+----------------
+    translate_words(records: list[TokenRecord]) -> list[TokenRecord]
+
+Input:  TokenRecords after apply_morphology(). Fields read: surface, pos.
+Output: a NEW list of copied TokenRecords; only ``surface`` changes. The base word
+        inside each surface is translated and its affixes stay:
+        "xea-star-mo-qo" -> "xea-cdr-mo-qo". Left as they are: names (PROPN),
+        punctuation, words with non-letters ("n't", numbers), and the conlang's
+        own words ("it", "xea-it", "soos", "who-do", "what-do").
+
+Known effects
+-------------
+Different words can share a translation: the cut merges words that differ only
+in their last two letters ("return" / "returned"), and chunks of different
+lengths can join into the same letters ("come" and "had" are both "yt").
+"""
+
+
+WORD_SEED = 0
+WORD_SETUP_FILES = ("Sample_Passages.txt", "sentences.txt", "lemma_list.txt")
+TRIGRAM_PAD = " "
+LONG_WORD, LONG_WORD_CUT = 7, 2  # words this long or longer lose their last 2 letters
+
+# The morphology's affixes, without their hyphens.
+_AFFIX_PREFIXES = {p.strip("-") for p in [PLURAL_PREFIX, ORDINAL_PREFIX, APPLICATIVE_PREFIX,
+                                          *POSSESSIVE_PREFIXES.values(), *ADJECTIVE_PREFIXES.values()]}
+_AFFIX_SUFFIXES = {s.strip("-") for s in [INDEFINITE_SUFFIX, CAUSATIVE_SUFFIX,
+                                          *DEFINITE_SUFFIXES.values(), *CASE_ENDINGS.values()]}
+# No chunk may spell one of these, so a short translated word can't pass for an
+# affix or one of the conlang's own words.
+_RESERVED_CHUNKS = _AFFIX_PREFIXES | _AFFIX_SUFFIXES | {PRONOUN, QUESTION_PARTICLE}
+
+
+# --------------------------------------------------------------------------
+# Setup (internal)
+# --------------------------------------------------------------------------
+
+def _shorten(word):
+    """Words of LONG_WORD letters or more lose their last LONG_WORD_CUT letters."""
+    return word[:-LONG_WORD_CUT] if len(word) >= LONG_WORD else word
+
+
+def _trigrams(word):
+    """Split a word into trigrams, padding the last one with spaces."""
+    word = word + TRIGRAM_PAD * (-len(word) % 3)
+    return [word[i:i + 3] for i in range(0, len(word), 3)]
+
+
+def _setup_words():
+    """Every word in the setup files, lowercase and letters only, shortened."""
+    here = Path(__file__).resolve().parent
+    words = set()
+    for name in WORD_SETUP_FILES:
+        words.update(_shorten(w) for w in re.findall(r"[a-z]+", (here / name).read_text(encoding="utf-8").lower()))
+    return sorted(words)
+
+
+def _all_chunks(length):
+    """Every chunk of the given length that doesn't spell a reserved word."""
+    chunks = ("".join(letters) for letters in product(string.ascii_lowercase, repeat=length))
+    return [c for c in chunks if c not in _RESERVED_CHUNKS]
+
+
+def _build_trigram_mapping(seed=WORD_SEED):
+    """Map every trigram in the setup words to its chunk, one-to-one."""
+    rng = random.Random(seed)
+    popularity = Counter(t for word in _setup_words() for t in set(_trigrams(word)))
+    # Most common first; ties go alphabetically, so the order is the same every run.
+    ranked = sorted(popularity, key=lambda t: (-popularity[t], t))
+
+    # One letter each for the most common trigrams, as many as there are letters.
+    letters = _all_chunks(1)
+    rng.shuffle(letters)
+    common, rest = ranked[:len(letters)], ranked[len(letters):]
+
+    # About half 2-letter and half 4-letter, as far as the 2-letter chunks go.
+    twos = _all_chunks(2)
+    n_two = min(len(rest) // 2, len(twos))
+    chunks = rng.sample(twos, n_two) + rng.sample(_all_chunks(4), len(rest) - n_two)
+    rng.shuffle(chunks)
+
+    mapping = dict(zip(common, letters))
+    mapping.update(zip(rest, chunks))
+    return mapping
+
+
+TRIGRAM_MAPPING = _build_trigram_mapping()
+_USED_CHUNKS = set(TRIGRAM_MAPPING.values())
+
+
+def _chunk_for(trigram):
+    """The trigram's chunk. A trigram the setup never saw gets a 4-letter chunk worked
+    out from the trigram itself, so it is the same every time. It never reuses a setup
+    chunk, but two unseen trigrams could share one."""
+    if trigram in TRIGRAM_MAPPING:
+        return TRIGRAM_MAPPING[trigram]
+    rng = random.Random(f"{WORD_SEED}:unseen:{trigram}")
+    while True:
+        chunk = "".join(rng.choice(string.ascii_lowercase) for _ in range(4))
+        if chunk not in _USED_CHUNKS and chunk not in _RESERVED_CHUNKS:
+            return chunk
+
+
+# --------------------------------------------------------------------------
+# Translation
+# --------------------------------------------------------------------------
+
+def translate_word(word):
+    """Translate one English word: shorten -> trigrams -> chunks -> shuffle -> join.
+
+    Example
+        "wolf" -> "tyhleqmh"
+    """
+    word = _shorten(word.lower())
+    chunks = [_chunk_for(t) for t in _trigrams(word)]
+    random.Random(f"{WORD_SEED}:word:{word}").shuffle(chunks)  # fresh seed, from the word
+    return "".join(chunks)
+
+
+def _translate_surface(rec):
+    """Translate the base word inside a record's surface, keeping its affixes."""
+    if rec.pos in {"PROPN", "PUNCT"}:
+        return rec.surface
+    pieces = rec.surface.split("-")
+    start, end = 0, len(pieces)
+    while start < end - 1 and pieces[start].lower() in _AFFIX_PREFIXES:
+        start += 1
+    while end - 1 > start and pieces[end - 1].lower() in _AFFIX_SUFFIXES:
+        end -= 1
+    base = [p.lower() for p in pieces[start:end]]
+    # The conlang's own words: "it", "xea-it", "soos", "who-do", "what-do".
+    if base in ([PRONOUN], [QUESTION_PARTICLE]) or (
+            INDEFINITE_SUFFIX.strip("-") in pieces[end:] and base in (["who"], ["what"])):
+        return rec.surface
+    if not all(p.isalpha() for p in base):
+        return rec.surface  # numbers, "n't" and the like stay as they are
+    return "-".join(pieces[:start] + [translate_word(p) for p in base] + pieces[end:])
+
+
+def translate_words(records):
+    """Translate the base word of every record.
+
+    Input:  list[TokenRecord], after apply_morphology().
+    Output: new list[TokenRecord] with conlang words; only surface changes.
+
+    Example
+        "Sun-mo sky-mi-zh oa-high is." -> "Lz-mo qfpc-mi-zh oa-fok ru."
+    """
+    out = [_copy(r) for r in records]
+    for rec in out:
+        rec.surface = _translate_surface(rec)
+    return out
+
+
 """a
 FINAL PIPELINE FUNCTION
 Add your functions above and then order them appropriately in the function below.
@@ -1185,4 +1893,8 @@ def sentence_transform(sentence):
     # 4. markers
     records = mark_accusatives(records)
     records = mark_applicative(records)
+    # 5. morphology: spells words, affixes and the markers above (reads English words)
+    records = apply_morphology(records)
+    # 6. word translation: English base words -> conlang words (affixes stay)
+    records = translate_words(records)
     return render_sentence(records)
