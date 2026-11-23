@@ -1899,3 +1899,20 @@ def sentence_transform(sentence):
     records = translate_words(records)
     # 7. the conlang is written without dashes: "sky-mi-zh" -> "skymizh"
     return render_sentence(records).replace("-", "")
+
+
+def translate_passage(text, seed=None):
+    """Translate English text of any length: a sentence, a paragraph, or several.
+
+    Paragraphs (separated by line breaks) are kept apart; within each one, spaCy
+    finds the sentences and each goes through sentence_transform on its own.
+    Causative sentences shuffle their clauses at random, so pass a seed (e.g. 0)
+    to get the same translation every time.
+    """
+    if seed is not None:
+        random.seed(seed)
+    paragraphs = []
+    for paragraph in text.splitlines():
+        sentences = [s.text.strip() for s in nlp(paragraph).sents if s.text.strip()]
+        paragraphs.append(" ".join(sentence_transform(s) for s in sentences))
+    return "\n".join(paragraphs)
