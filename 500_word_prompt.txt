@@ -1,0 +1,17 @@
+You are a story writer working under strict constraints. Using only lemmas found in the attached file "lemma_list.txt", generate a narrative passage and provide it as a .txt. It should be distinct from the attached story "story_250.txt". The passage should be 500 words and include each of the following grammatical features at least once:
+
+1. Passive voice
+2. A yes/no question
+3. An applicative clause
+4. A periphrastic and a non-periphrastic causative clause
+5. An adposition and noun phrase
+6. A genitive and noun phrase
+7. A noun described by an adjective
+8. A noun described by a relative clause
+9. Plural words
+10. Possessives
+11. Ordinals
+12. Definite and indefinite articles
+13. Pronouns (he, she, they, it)
+14. Demonstrative pronouns (this, that)
+15. Indefinite subjects (someone)
